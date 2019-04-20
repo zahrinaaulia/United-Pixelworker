@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -29,6 +28,7 @@
 
   <style>
 
+   
     .btn-default{
       color: red;
       border: 0px;
@@ -49,7 +49,7 @@
     body, html{
 
 
-        background-image: url("<?php echo base_url();?>assets/background.png");
+       
         background-repeat: no-repeat;
         background-size: cover;  
         
@@ -72,7 +72,7 @@
       border: 5px solid white;
       background-color: white;
       width: 500px;
-      height: 600px;
+      height: 800px;
       border-radius: 10px;
       margin-left: 650px;
       margin-top:200px;
@@ -461,16 +461,6 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 
-#content {
-    width: 100%;
-    padding: 20px;
-  
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .nav-link{
   margin-left: 20px;
   float: left;
@@ -486,53 +476,95 @@ a.article:hover {
 .active{
   background-color: black: 
 }
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
 
- 
+#content {
+    width: 100%;
+    padding: 20px;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.kotak{
+  border :1px solid black;
+  height: 150px;
+}
+
+
+
+
+
+.btntshirt{
+  font-size:24px;
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  margin-left: 80px;
+  margin-top: 50px;
+  border-radius: 2px;
+  width: 300px;
+  height: 50px;
+
+}
+
         
 
   </style>
 </head>
 <body>                 
-<div class="overlay fixed-top"> </div>
-     <!-- Page Content  -->
-  <div id="content">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
-      <div class="container-fluid">
-        <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>            
-        </button>
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
-        </button>
-        <div class="row" >
-            <div class="container3">
-                <ul class="nav navbar-nav">
-                  <li class="col-md-2" ">
-                    <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                      <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
-                      <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
-                    </form>
-                  </li>
-                  <li class="col-md-8">
-                    <a class="nav-link" href="#" style="margin-left: 500px;">
-                      <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                  </li>
-                  <li class="col-md-2">
-                    <div style="margin-left: 70px; padding-top: 10px;">
-                      <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
-                      <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                  </li>
-                </ul>
-            </div>      
-        </div>                      
-      </div>        
-    </nav>
-  </div>
 
+
+  <div class="overlay fixed-top"></div>
+
+            <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="row" >
+                      <div class="container3">
+                          <ul class="nav navbar-nav">
+                            <li class="col-md-2" ">
+                              <form id="search" style="width: 600px; align:center; padding-top: 10px;">
+                                <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
+                                <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
+                              </form>
+                            </li>
+                            <li class="col-md-8">
+                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                  <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                              
+                            </li>
+                            <li class="col-md-2">
+                              <div style="margin-left: 70px; padding-top: 10px;">
+                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                 <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                                
+                            </li>
+                        </ul>
+                      </div>
+                        
+                    </div>                      
+                    </div>
+                    
+            </nav>
+</div>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar" >
@@ -545,7 +577,7 @@ a.article:hover {
             </div>
 
             <ul class="list-unstyled components"  ">
-              <div style="border-top: 5px solid grey;">
+              <div style="border-top: 1px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
                     <a href='#'>All Product </a>
@@ -574,70 +606,45 @@ a.article:hover {
               
             </ul>
 
-            <!-- <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul> -->
+
         </nav>
 
 </div>
-
-      <!-- <nav id="nav-id" class="navbar navbar-default navbar-fixed-top mainNavbar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4">
-                <ul class="nav navbar-nav">
-                    <li ><button class="navbar-toggler offCanvasToggler d-inline-flex mr-2" style="color: red;" ><span class="navbar-toggler-icon" style="color: red;"></span></button></li>
-                    <li>
-                      <img src="<?php echo base_url();?>assets/search.png" style="width: 20px; height: 20px; background-color: white; margin-left: 30px;">
-                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>                         
-                      </li>
-                        
-                    
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav navbar-nav" style="margin-left: 250px">
-                    <li><a href="#"style="color: red;"><img src="assets/logo.jpeg" width="50px" height="55px"></a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav navbar-nav" style="margin-left:320px;">
-                    <li><a href="#" class="btn btn-default btn-lg"style="color: red;"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
-                    <li><a href="#" class="btn btn-default btn-lg"style="color: red;"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                </ul>
-            </div>
-          </div>
+  <div style="margin-top: 100px;"></div>
+  <div class="MainContainer">
+    <div class="kotak">
+      <div class="row">
+        <div class="col-lg-6">
+          <p style="margin-top: 40px; margin-left: 80px; font-size: 40px; color: black; font-weight: 700;">Aan Store</p>
         </div>
-      </nav> 
-       --><div class="mainContainer">
-          <form class="form_1">
-          <h2> Sign up </h2>
-              <div class="inputdata">
-                <label>Email</label>
-                <input type="text" id="input" name="username" placeholder="  email@pixelcorp.com" required/>
-              </div>
-              <div class="inputdata">
-                <label>Password</label>
-                <a href="#" class="forgot-password">Forgot Password?</a>
-                <input type="text" id="input" name="passwod" placeholder="" required/>
-              </div>
-
-              <input class="button" type="submit" value="SIGN IN ">
-
-               <div class="toggle-link" style="font-size:15px;"> 
-                Already have an account?<a href="<?php echo site_url();?>/login_controller/register" style="font-size:15px; color: red"> Create here.</a>
-              </div>
-             
-        </form>
-
-        
+        <div class="col-lg-6">
+          <button class="btntshirt"><i class="fa fa-tshirt"></i> T-Shirt</button>
+        </div>
       </div>
-   
+    </div>
+    <div style="height: auto; padding-bottom:50px;">
+      <div class="row">
+        <div class="col-md-6">
+            <img src="<?php echo base_url();?>img/6.PNG" style="margin-left: 40px; margin-top: 50px;">  
+        </div>
+        <div class="col-md-6">
+          <div style="border: 1px solid; width: 700px; height: 800px; margin-top: 40px; margin-left: 70px;">
+            <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;"> FIT </span></p>
+            <button style="width: 550px; height: 70px; font-size: 20px; margin-left: 100px; background-color: white; border:1px groove #d3d3d3;border-radius: 5px;"> UNISEX</button>
+            <p style="margin-left: 40px; padding-top: 40px;"> 02. <span style="color: black;"> STYLE </span></p>
+             <button style="width: 550px; height: 100px; font-size: 20px; margin-left: 100px; background-color: white; border:1px groove #d3d3d3;border-radius: 5px;"><i class="fa fa-tshirt" style="float: left; margin-left: 30px; width: 80px; height: 80px;"></i><h1 style="font-size: 20px; float: left; padding-top: 10px; margin-left: 10px; ">Standard Tee</h1><br/>
+              <h1  style="font-size: 15px; float: left; padding-top: 5px; margin-left: 10px; color: grey; " >Next level, we've been used same shirt for years</h1></button>
+              <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;">MATERIAL AND COLOR </span></p>
+               <button style="width: 150px; height: 100px;  margin-left: 100px; background-color: white; border:1px groove #d3d3d3; border-radius: 5px;"> UNISEX</button>
+          </div>
+          
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
    
 
 

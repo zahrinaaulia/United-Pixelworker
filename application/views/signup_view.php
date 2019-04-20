@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -29,6 +28,7 @@
 
   <style>
 
+   
     .btn-default{
       color: red;
       border: 0px;
@@ -72,7 +72,7 @@
       border: 5px solid white;
       background-color: white;
       width: 500px;
-      height: 600px;
+      height: 800px;
       border-radius: 10px;
       margin-left: 650px;
       margin-top:200px;
@@ -464,7 +464,6 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
-  
     transition: all 0.3s;
     position: absolute;
     top: 0;
@@ -487,52 +486,60 @@ a.article:hover {
   background-color: black: 
 }
 
- 
         
 
   </style>
 </head>
 <body>                 
-<div class="overlay fixed-top"> </div>
-     <!-- Page Content  -->
-  <div id="content">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
-      <div class="container-fluid">
-        <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>            
-        </button>
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
-        </button>
-        <div class="row" >
-            <div class="container3">
-                <ul class="nav navbar-nav">
-                  <li class="col-md-2" ">
-                    <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                      <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
-                      <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
-                    </form>
-                  </li>
-                  <li class="col-md-8">
-                    <a class="nav-link" href="#" style="margin-left: 500px;">
-                      <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                  </li>
-                  <li class="col-md-2">
-                    <div style="margin-left: 70px; padding-top: 10px;">
-                      <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
-                      <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                  </li>
-                </ul>
-            </div>      
-        </div>                      
-      </div>        
-    </nav>
-  </div>
 
+
+  <div class="overlay fixed-top"></div>
+
+            <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="row" >
+                      <div class="container3">
+                          <ul class="nav navbar-nav">
+                            <li class="col-md-2" ">
+                              <form id="search" style="width: 600px; align:center; padding-top: 10px;">
+                                <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
+                                <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
+                              </form>
+                            </li>
+                            <li class="col-md-8">
+                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                  <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                              
+                            </li>
+                            <li class="col-md-2">
+                              <div style="margin-left: 70px; padding-top: 10px;">
+                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                 <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                                
+                            </li>
+                        </ul>
+                      </div>
+                        
+                    </div>                      
+                    </div>
+                    
+            </nav>
+</div>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar" >
@@ -627,17 +634,19 @@ a.article:hover {
                 <input type="text" id="input" name="passwod" placeholder="" required/>
               </div>
 
-              <input class="button" type="submit" value="SIGN IN ">
+              <div><p>We reccomend at least 8 characters long, avoiding patterns and common words/phrases.See Google's<a href="#" style="font-size:15px;color: red;"> creating a strong password </a>guide for more help</p>
+              </div>
 
-               <div class="toggle-link" style="font-size:15px;"> 
-                Already have an account?<a href="<?php echo site_url();?>/login_controller/register" style="font-size:15px; color: red"> Create here.</a>
+              <div><p>By clicking the Sign Up button bellow, you agree to our <a href="#" style="font-size:15px; color: red;">Terms of Service and Privacy Policy.</a> </p></div>
+
+              <input class="button" type="submit" value="SIGN UP">
+
+              <div class="toggle-link" style="font-size:15px;"> 
+                Already have an account?<a href="<?php echo site_url();?>/login_controller/index" style="font-size:15px; color: red"> Sign in here.</a>
               </div>
              
         </form>
-
-        
       </div>
-   
    
 
 
