@@ -19,4 +19,16 @@ class login_controller extends CI_Controller{
 	function home(){
 		$this->load->view('home');
 	}
+
+	function order(){
+		$this->load->view('ordernew');
+	}
+
+	function profile(){
+		$this->load->view('profilenew');
+	}
+
+	function product(){
+		$this->load->view('productnew');
+	}
 }
