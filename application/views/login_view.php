@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -39,7 +39,7 @@
 
     .navbar-default{
       background: white;
-      
+
     }
 
     #nav-id{
@@ -51,8 +51,8 @@
 
         background-image: url("<?php echo base_url();?>assets/background.png");
         background-repeat: no-repeat;
-        background-size: cover;  
-        
+        background-size: cover;
+
    }
 
    h2{
@@ -168,7 +168,7 @@
 
   footer{
     background: #2b2d31;
-    height: 900px; 
+    height: 900px;
     margin-top:0 ;
 
   }
@@ -251,7 +251,7 @@ h4,h5,h6{
     box-sizing: border-box;
     padding: 0 10px 0 10px;
     color: black;
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
     border-radius: 0px;
     font-size: 12px;
@@ -464,7 +464,7 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
-  
+
     transition: all 0.3s;
     position: absolute;
     top: 0;
@@ -477,29 +477,29 @@ a.article:hover {
 }
 
 .container3{
-  
+
   width: 1600px;
   margin-left: 20px;
-  
+
 
 }
 .active{
-  background-color: black: 
+  background-color: black:
 }
 
- 
-        
+
+
 
   </style>
 </head>
-<body>                 
+<body>
 <div class="overlay fixed-top"> </div>
      <!-- Page Content  -->
   <div id="content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
       <div class="container-fluid">
         <button type="button" id="sidebarCollapse" class="btn btn-info">
-            <i class="fas fa-align-left"></i>            
+            <i class="fas fa-align-left"></i>
         </button>
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
@@ -527,9 +527,9 @@ a.article:hover {
                     </div>
                   </li>
                 </ul>
-            </div>      
-        </div>                      
-      </div>        
+            </div>
+        </div>
+      </div>
     </nav>
   </div>
 
@@ -565,13 +565,13 @@ a.article:hover {
               <div style="border-top: 5px solid grey;">
                 <li>
                   <a href="#">Sign In</a>
-                    
+
                 </li>
               </div>
-                
-                
-                
-              
+
+
+
+
             </ul>
 
             <!-- <ul class="list-unstyled CTAs">
@@ -594,10 +594,10 @@ a.article:hover {
                     <li ><button class="navbar-toggler offCanvasToggler d-inline-flex mr-2" style="color: red;" ><span class="navbar-toggler-icon" style="color: red;"></span></button></li>
                     <li>
                       <img src="<?php echo base_url();?>assets/search.png" style="width: 20px; height: 20px; background-color: white; margin-left: 30px;">
-                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>                         
+                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>
                       </li>
-                        
-                    
+
+
                 </ul>
             </div>
             <div class="col-md-4">
@@ -613,7 +613,7 @@ a.article:hover {
             </div>
           </div>
         </div>
-      </nav> 
+      </nav>
        --><div class="mainContainer">
           <form class="form_1">
           <h2> Sign up </h2>
@@ -629,16 +629,16 @@ a.article:hover {
 
               <input class="button" type="submit" value="SIGN IN ">
 
-               <div class="toggle-link" style="font-size:15px;"> 
+               <div class="toggle-link" style="font-size:15px;">
                 Already have an account?<a href="<?php echo site_url();?>/login_controller/register" style="font-size:15px; color: red"> Create here.</a>
               </div>
-             
+
         </form>
 
-        
+
       </div>
-   
-   
+
+
 
 
   <footer>
@@ -652,7 +652,7 @@ a.article:hover {
             <input type="text" name="email" placeholder="  discount@me.com" class="email_input">
             <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
           </div>
-           
+
         </div>
     </div>
   </div>
@@ -680,7 +680,7 @@ a.article:hover {
 
     <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sell</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter; ">How it works</a>
@@ -696,7 +696,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">About Us</a>
@@ -722,7 +722,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Blank</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Shop Blank</a>
@@ -742,7 +742,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Sign In</a>
@@ -755,7 +755,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">us@cottonbureau.com</a>

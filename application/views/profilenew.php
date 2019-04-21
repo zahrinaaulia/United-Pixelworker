@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -39,7 +39,7 @@
 
     .navbar-default{
       background: white;
-      
+
     }
 
     #nav-id{
@@ -193,14 +193,14 @@ a.article:hover {
 }
 
 .container_3{
-  
+
   width: 1600px;
   margin-left: 20px;
-  
+
 
 }
 .active{
-  background-color: black: 
+  background-color: black:
 }
 
 
@@ -210,7 +210,7 @@ a.article:hover {
  border-right: 1px solid rgb(247, 243, 243);
  border-right-width: 0px 500px;
  background-color:rgb(247, 244, 244);
- 
+
 }
 
 .container1{
@@ -220,7 +220,7 @@ a.article:hover {
 
 .container2{
   margin-top: 100px;
-  margin-right: 10px; 
+  margin-right: 10px;
 
 }
 
@@ -280,8 +280,8 @@ a.article:hover {
 
 #img1 {
   margin-top: 110px;
-  
-  
+
+
   margin-bottom: 20px;
 }
 
@@ -316,7 +316,7 @@ h6 {
 
 footer{
     background: #2b2d31;
-    height: 700px; 
+    height: 700px;
 
   }
 
@@ -425,7 +425,7 @@ h4,h5{
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
- 
+
 }
 
 #nav1 {
@@ -489,7 +489,7 @@ h4,h5{
 
 .container2{
   margin-top: 100px;
-  margin-right: 10px; 
+  margin-right: 10px;
 
 }
 
@@ -517,7 +517,7 @@ h4,h5{
 }
 
 #flex {
-  padding-top: 250px;
+  padding-top: 50px;
   font-size: 15px;
  color: black;
  padding-left: 50px;
@@ -537,13 +537,11 @@ h4,h5{
  color: black;
 }
 
-  padding: 9px 10px 9px 32px;
-  width: 55px;
-        
+
 
   </style>
 </head>
-<body>                 
+<body>
 
 
   <div class="overlay fixed-top"></div>
@@ -556,7 +554,7 @@ h4,h5{
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        
+
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -564,33 +562,33 @@ h4,h5{
                     <div class="row" >
                       <div class="container_3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2" >
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                                <img src="assets/search.png" style="width: 30px;">
+                                <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
                                 <a class="nav-link" href="#" style="margin-left: 500px;">
-                                  <img src="assets/logo.jpeg" style="width: 40px; align:center;">
+                                  <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
                                 </a>
                             </li>
                             <li class="nav-item">
-                              
+
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
                                 <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
-                                
+
                             </li>
                         </ul>
                       </div>
-                        
-                    </div>                      
+
                     </div>
-                    
+                    </div>
+
             </nav>
 </div>
     <div class="wrapper">
@@ -604,7 +602,7 @@ h4,h5{
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components"  ">
+            <ul class="list-unstyled components"  >
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -625,13 +623,13 @@ h4,h5{
               <div style="border-top: 5px solid grey;">
                 <li class="active" style="background-color: black;">
                   <a href="#">Sign In</a>
-                    
+
                 </li>
               </div>
-                
-                
-                
-              
+
+
+
+
             </ul>
 
             <!-- <ul class="list-unstyled CTAs">
@@ -651,7 +649,7 @@ h4,h5{
 <div class="row">
     <div class="col-lg-2">
     <div class="container_4">
- 
+
            <div> <h2 id="nav1" href="#">Ananda Miarta</h2></div>
            <hr id="hr1">
            <b id="nav2" href="#" class="btn btn-lg"> Product </b>
@@ -666,43 +664,43 @@ h4,h5{
            <b id="nav3" href="#" class="btn btn-lg"> Sign Out </b>
 
     </div>
-        
+
 </div>
   <div>
         <h2 id="pr"> Profile </h2>
     <div class="container1">
-            <div> 
+            <div>
              <h2 id="name1"> YOUR NAME </h2>
              <input id="input" type="text" name="name" placeholder="Senor Cotton">
             </div>
 
-            <div> 
+            <div>
              <h2 id="text"> EMAIL </h2>
              <input id="input" type="text" name="email" placeholder="you@yourname.com">
             </div>
 
-            <div> 
+            <div>
              <h2 id="text"> PASSWORD </h2>
              <input id="input" type="password" name="password" placeholder="" required>
              <!-- <h5 id="text"> We recommend at least 8 characters long, avoiding patterns and common words/phrases. See Google's creating a strong password guide for more help. </h5> -->
             </div>
 
-            <div> 
+            <div>
              <h2 id="text"> TWITTER </h2>
              <input id="input" type="text" name="twitter" placeholder="@cottonbureau">
             </div>
 
-            <div> 
+            <div>
              <h2 id="text"> INSTAGRAM </h2>
              <input id="input" type="text" name="instagram" placeholder="@cottonbureau">
             </div>
 
-            <div> 
+            <div>
              <h2 id="text"> WEBSITE </h2>
              <input id="input" type="text" name="website" placeholder="https://cottonbureau.com">
             </div>
 
-            <div> 
+            <div>
              <h2 id="text"> LOCATION </h2>
              <input id="input" type="text" name="location" placeholder="Pittsburgh, PA">
             </div>
@@ -712,16 +710,19 @@ h4,h5{
         </div>
 
 <div class="col-lg-4">
-        <div class="container2"> 
-          <div class="flex-container">
+        <div class="container2">
+          <div class="flex-container" style='padding-top: 50px;'>
   <!-- <script>
                        function myFunction() {
                          var x = document.getElementById("myFile");
                          x.disabled = true;
                       }
                       </script> -->
-                      <div style="height: 550px">
+                      <div style="height: 700px;">
+                        <img src="<?php echo base_url('assets/2.JPG') ?>" class="rounded-circle" alt="Cinque Terre" width="304" height="236" style='margin-top: 20px; margin-left: 100px;'>
                        <h2 id="flex"> AVATAR </h2>
+                       <input type="file"  name="photo" accept=".gif, .jpeg, .jpg, .png, image/gif, image/jpeg, image/png" class="file-input-current" value="Browse" style='padding-left: 50px;'>
+
                       <h5 id="tulisan"> 400px or larger, 5mb max, JPG/PNG/GIF. It will be cropped to a circle when being displayed, so plan accordingly (see above preview). Squares work best. </h5>
                       <h2 style="font-size: 15px; padding-left: 50px; color: black"> BIO </h2>
                       <input id="input1" type="text" name="bio" placeholder="Go ahead, say something nice about yourself.">
@@ -774,7 +775,7 @@ h4,h5{
           <input type="text" name="email" placeholder="  discount@me.com" class="email_input">
           <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
         </div>
-         
+
       </div>
   </div>
 </div>
@@ -802,7 +803,7 @@ h4,h5{
 
     <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sell</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter; ">How it works</a>
@@ -818,7 +819,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">About Us</a>
@@ -844,7 +845,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Blank</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Shop Blank</a>
@@ -864,7 +865,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Sign In</a>
@@ -877,7 +878,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">us@cottonbureau.com</a>
@@ -905,6 +906,6 @@ h4,h5{
         © Cotton Bureau. All rights reserved.
       </div>
   </div>
-    
+
 </footer>
 </html>
