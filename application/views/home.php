@@ -180,6 +180,7 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
+    min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
     top: 0;
@@ -454,14 +455,14 @@ h4,h5{
                       <div class="container_3">
                           <ul class="nav navbar-nav">
                             <li class="col-md-2" ">
-                              <form id="search" style="width: 600px; align:center; margin-top: 9px;">
-                                <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
+                              <form id="search" style="width: 600px; align:center; padding-top: 10px;">
+                                <img src="assets/search.png" style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
                                 <a class="nav-link" href="#" style="margin-left: 500px;">
-                                  <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
+                                  <img src="assets/logo.jpeg" style="width: 40px; align:center;">
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -588,28 +589,28 @@ h4,h5{
     <div class="row">
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="<?php echo base_url();?>img/6.PNG" width="250px" height="300px">
+    <img id="img1" src="img/6.png" width="250px" height="300px">
     <button class="btn1"></button>
       </div>
       <h6>HOODIE</h6>
       </div>
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="<?php echo base_url();?>img/7.PNG" width="250px" height="300px">
+    <img id="img1" src="img/7.png" width="250px" height="300px">
     <button class="btn1"></button>
       </div>
       <h6>HOODIE</h6>
       </div>
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="<?php echo base_url();?>img/8.PNG" width="250px" height="300px">
+    <img id="img1" src="img/8.png" width="250px" height="300px">
     <button class="btn1"></button>
       </div>
       <h6>HOODIE</h6>
     </div>
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="<?php echo base_url();?>img/9.PNG" width="250px" height="300px">
+    <img id="img1" src="img/9.png" width="250px" height="300px">
     <button class="btn1"></button>
     </div>
     <h6>HOODIE</h6>
@@ -620,28 +621,28 @@ h4,h5{
 <div class="row">
     <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/10.PNG" width="250px" height="300px">
+<img id="img2" src="img/6.png" width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/11.PNG" width="250px" height="300px">
+<img id="img2" src="img/7.png" width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/12.PNG" width="250px" height="300px">
+<img id="img2" src="img/8.png" width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
 </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/13.PNG" width="250px" height="300px">
+<img id="img2" src="img/9.png" width="250px" height="300px">
 <button class="btn2"></button>
 </div>
 <h6>HOODIE</h6>
@@ -652,21 +653,21 @@ h4,h5{
 <div class="row">
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/14.PNG" width="250px" height="300px">
+<img id="img2" src="img/6.png" width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/15.PNG" width="250px" height="300px">
+<img id="img2" src="img/7.png" width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="<?php echo base_url();?>img/16.png" width="250px" height="300px">
+<img id="img2" src="img/8.png" width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
