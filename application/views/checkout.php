@@ -491,7 +491,6 @@ a.article:hover {
 }
 
 .kotak{
-  border :1px solid black;
   height: 150px;
 }
 
@@ -558,12 +557,14 @@ a.article:hover {
 td{
   border-top:1px solid grey;
   border-bottom:1px solid grey;
-  font-size: 20px;
+  font-size: 15px;
+  height: 80px;
+
 }
 
 table{
   margin-top: 40px;
-  margin-left: 70px;
+  margin-left: 100px;
   width: 800px;
   height: 400px;
 
@@ -680,13 +681,13 @@ table{
         </div>
       </div>
     </div>
-    <div style="height: auto; padding-bottom:50px; background-color:grey;">
+    <div style="height: auto; padding-bottom:50px; background-color:#F5F5F5;">
       <div class="row">
         <div class="col-md-6">
             <img src="<?php echo base_url();?>img/6.PNG" style="margin-left: 40px; margin-top: 50px;">
         </div>
         <div class="col-md-6">
-            <div style="border: 1px solid; width: 700px; height: 1200px; margin-top: 40px; margin-left: 70px;">
+            <div style="width: 700px; height: 1200px; margin-top: 40px; margin-left: 70px;">
                 <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;"> FIT </span></p>
                     <button style="width: 550px; height: 70px; font-size: 20px; margin-left: 100px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;"> UNISEX</button>
                 <p style="margin-left: 40px; padding-top: 40px;"> 02. <span style="color: black;"> STYLE </span></p>
@@ -721,7 +722,7 @@ table{
                         <label class="custom-checkbox"align="center" style="padding-top:20px;">
                             <input type="hidden" name="alarm" value="False"/>
                             <input class="custom-checkbox-input" name="alarm" value="s" type="checkbox">
-                            <span class="custom-checkbox-text" >2X</span>
+                            <span class="custom-checkbox-text">2X</span>
                         </label>
                         <label class="custom-checkbox" align="center" style="padding-top:20px;">
                             <input type="hidden" name="alarm" value="False" />
@@ -783,40 +784,63 @@ table{
       <div style="background-color:white; margin-top:130px; margin-bottom:100px;">
         <div class="row">
           <div class="col-md-6">
-            <table>
+            <table style="margin-right:30px;">
               <tr>
-                <td>Sizing</td>
-                <td  text-align: center;></td>
-                <td  text-align: center;></td>
+                <th style="border-top:1px solid grey; font-weight:lighter;">Sizing</th>
+                <th style="border-top:1px solid grey;"></th>
+                <th style="border-top:1px solid grey;"></th>
               </tr>
               <tr>
-                <td>In Inches</td>
-                <td  text-align: center;>Chest</td>
-                <td  text-align: center;>Length</td>
+                <td style="padding-right:80px;font-weight:bold;">Inches</td>
+                <td style="font-weight:bold;">Chest</td>
+                <td style="font-weight:bold;">Length</td>
               </tr>
               <tr>
-                <td>S</td>
-                <td  text-align: center;>34.5-36</td>
-                <td  text-align: center;>26-27</td>
+                <td style="font-weight:bold;">S</td>
+                <td>34.5-36</td>
+                <td>26-27</td>
               </tr>
               <tr>
-                <td>M</td>
-                <td  text-align: center;>37-38</td>
-                <td  text-align: center;>27.50-28.50</td>
+                <td style="font-weight:bold;">M</td>
+                <td>37-38</td>
+                <td>27.50-28.50</td>
               </tr>
               <tr>
-                <td>L</td>
-                <td  text-align: center;>38.50-41</td>
-                <td  text-align: center;>29.50-30.50</td>
+                <td style="font-weight:bold;">L</td>
+                <td>38.50-41</td>
+                <td>29.50-30.50</td>
               </tr>
               <tr>
-                <td>2X</td>
-                <td  text-align: center;>46-48</td>
-                <td  text-align: center;>30-31</td>
+                <td style="font-weight:bold;">2X</td>
+                <td>46-48</td>
+                <td>30-31</td>
               </tr>
             </table>
           </div>
           <div class="col-md-6">
+            <table style="width: 600px; margin-left:130px;">
+              <tr>
+                <th style="border-top:1px solid grey; font-weight:lighter;">Details</th>
+              </tr>
+              <tr>
+                <td>Next Level tri-blend men's tee</td>
+              </tr>
+              <tr>
+                <td>SLim,modern-fit,Lightweight,drapey fabric.</td>
+              </tr>
+              <tr>
+                <td>Super-soft 50% polyester,25% cotton,25% rayon,4.3 oz.</td>
+              </tr>
+              <tr>
+                <td> Printed size tag.</td>
+              </tr>
+              <tr>
+                <td>Imported, printed in Bandung,Indonesia </td>
+              </tr>
+              <tr>
+                <td>Graphic digitally printed.</td>
+              </tr>
+            </table>
 
           </div>
 
