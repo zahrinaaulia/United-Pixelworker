@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="style3.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -524,7 +525,7 @@ a.article:hover {
 
 .custom-checkbox {
   width: 150px;
-  height: 50px;
+  height: 53px;
   border:1px solid #d3d3d3;
   border-radius: 5px;
   color: grey;
@@ -533,27 +534,41 @@ a.article:hover {
 
 .custom-checkbox-input {
   display: none;
+
 }
 
 .custom-checkbox-text {
-  padding: 1rem;
   background-color: white;
   color: grey;
   cursor: pointer;
   user-select: none;
   font-size: 15px;
+  padding: 19px 68px 15px;
+  border-radius: 5px;
 
 }
 
-.custom-checkbox-input:checked ~ .custom-checkbox-text {
+.custom-checkbox-input:checked ~ .custom-checkbox-text{
 
   background-color: red;
   color: white;
-  width: 150px;
-  height: 50px;
 
 }
 
+td{
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+  font-size: 20px;
+}
+
+table{
+  margin-top: 40px;
+  margin-left: 70px;
+  width: 800px;
+  height: 400px;
+
+
+}
 
 
   </style>
@@ -665,7 +680,7 @@ a.article:hover {
         </div>
       </div>
     </div>
-    <div style="height: auto; padding-bottom:50px;">
+    <div style="height: auto; padding-bottom:50px; background-color:grey;">
       <div class="row">
         <div class="col-md-6">
             <img src="<?php echo base_url();?>img/6.PNG" style="margin-left: 40px; margin-top: 50px;">
@@ -681,32 +696,48 @@ a.article:hover {
                     <button style="width: 150px; height: 150px;  margin-left: 100px; background-color: white; border:1px solid #d3d3d3; border-radius: 5px;"><span class="dot"></span><h1 style="font-size: 15px; padding-top: 5px; color: grey; ">WHITE</h1><h1 style="font-size: 15px; padding-top: 5px; color: grey; "> 100% COTTON </h1></button>
                 <p style="margin-left: 40px; padding-top: 40px;"> 04. <span style="color: black;"> SIZE </span></p>
                       <div style="margin-left: 70px; margin-bottom: 10px">
-                        <label class="custom-checkbox">
+                        <label class="custom-checkbox"align="center" style="padding-top:20px;">
                             <input type="hidden" name="alarm" value="False"/>
                             <input class="custom-checkbox-input" name="alarm" value="s" type="checkbox">
-                            <span class="custom-checkbox-text">S</span>
+                            <span class="custom-checkbox-text" >S</span>
                         </label>
-                        <label class="custom-checkbox">
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
                             <input type="hidden" name="alarm" value="False" />
                             <input class="custom-checkbox-input" name="alarm" value="m" type="checkbox">
                             <span class="custom-checkbox-text">M</span>
                         </label>
-                        <label class="custom-checkbox">
+                        <label class="custom-checkbox"align="center" style="padding-top:20px;">
                             <input type="hidden" name="alarm" value="False" />
                             <input class="custom-checkbox-input" name="alarm" value="l" type="checkbox">
                             <span class="custom-checkbox-text">L</span>
                         </label>
-                        <label class="custom-checkbox">
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
                             <input type="hidden" name="alarm" value="False" />
                             <input class="custom-checkbox-input" name="alarm" value="xl" type="checkbox">
                             <span class="custom-checkbox-text">XL</span>
                         </label>
                       </div>
                       <div style="margin-left: 70px;">
-                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">2X</button>
-                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">3X</button>
-                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">4X</button>
-                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;">5X</button>
+                        <label class="custom-checkbox"align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False"/>
+                            <input class="custom-checkbox-input" name="alarm" value="s" type="checkbox">
+                            <span class="custom-checkbox-text" >2X</span>
+                        </label>
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="m" type="checkbox">
+                            <span class="custom-checkbox-text">3X</span>
+                        </label>
+                        <label class="custom-checkbox"align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="l" type="checkbox">
+                            <span class="custom-checkbox-text">4X</span>
+                        </label>
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="xl" type="checkbox">
+                            <span class="custom-checkbox-text">5X</span>
+                        </label>
                       </div>
                 <div class="container-fluid">
                     <p style="margin-left: 10px; margin-top: 80px; color: black; font-size: 90px;font font-weight:lighter; float: left;">$27 </span></p>
@@ -717,13 +748,80 @@ a.article:hover {
                 </div>
                 </div>
             </div>
-            aa
       </div>
+      <div style="background-color:white; margin-top:130px; margin-bottom:100px;">
+        <div class="row">
+          <div class="col-md-4" style="margin-left:60px;">
+            <p style="padding-top:30px; border-top: 1px solid grey; "> Aan Store</p>
+            <p style="padding-top:20px;"> aan mempunyai semua koleksi hoodie yang terbaru yang di produksi di bandung dan akan dijual juga di bandung. selain itu aan store juga menjual berbagai t-shirt yang bisa dilihat di @greatindonesia </p>
+          </div>
+          <div class="col-md-2" style="margin-left:60px;">
+            <div class="tags" style=" border-top: 1px solid grey;">
+              <p style="padding-top:30px; padding-bottom: 40px;">tags</p>
+            </div>
+            <div class="share"style=" border-top: 1px solid grey;">
+              <p style="padding-top: 10px; padding-bottom: 20px; ">share</p>
+              <i class="fab fa-twitter fa-2x" ></i>
+              <i class="fab fa-pinterest fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+
+            </div>
+          </div>
+          <div class="col-md-4" style="margin-left:60px;">
+              <h1 style="padding-top:30px; border-top: 1px solid grey; ">Ananda Miarta</h1>
+              <p>Bali</p>
+              <i class="fab fa-twitter fa-2x" ></i>
+              <i class="fab fa-pinterest fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+
+          </div>
 
 
+        </div>
 
-    </div>
-  </div>
+      </div>
+      <div style="background-color:white; margin-top:130px; margin-bottom:100px;">
+        <div class="row">
+          <div class="col-md-6">
+            <table>
+              <tr>
+                <td>Sizing</td>
+                <td  text-align: center;></td>
+                <td  text-align: center;></td>
+              </tr>
+              <tr>
+                <td>In Inches</td>
+                <td  text-align: center;>Chest</td>
+                <td  text-align: center;>Length</td>
+              </tr>
+              <tr>
+                <td>S</td>
+                <td  text-align: center;>34.5-36</td>
+                <td  text-align: center;>26-27</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td  text-align: center;>37-38</td>
+                <td  text-align: center;>27.50-28.50</td>
+              </tr>
+              <tr>
+                <td>L</td>
+                <td  text-align: center;>38.50-41</td>
+                <td  text-align: center;>29.50-30.50</td>
+              </tr>
+              <tr>
+                <td>2X</td>
+                <td  text-align: center;>46-48</td>
+                <td  text-align: center;>30-31</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+
+        </div>
+      </div>
 
 
 

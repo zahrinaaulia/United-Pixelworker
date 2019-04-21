@@ -564,13 +564,13 @@ h4,h5{
                           <ul class="nav navbar-nav">
                             <li class="col-md-2" >
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                                <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
+                                <img src="<?php echo base_url();?>assets/search.png " style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
                                 <a class="nav-link" href="#" style="margin-left: 500px;">
-                                  <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
+                                  <img src="<?php echo base_url();?>assets/search.png" style="width: 40px; align:center;">
                                 </a>
                             </li>
                             <li class="nav-item">
