@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -39,7 +39,7 @@
 
     .navbar-default{
       background: white;
-      
+
     }
 
     #nav-id{
@@ -193,14 +193,14 @@ a.article:hover {
 }
 
 .container_3{
-  
+
   width: 1600px;
   margin-left: 20px;
-  
+
 
 }
 .active{
-  background-color: black: 
+  background-color: black:
 }
 
 
@@ -210,7 +210,7 @@ a.article:hover {
  border-right: 1px solid rgb(247, 243, 243);
  border-right-width: 0px 500px;
  background-color:rgb(247, 244, 244);
- 
+
 }
 
 .container1{
@@ -220,7 +220,7 @@ a.article:hover {
 
 .container2{
   margin-top: 100px;
-  margin-right: 10px; 
+  margin-right: 10px;
 
 }
 
@@ -280,8 +280,8 @@ a.article:hover {
 
 #img1 {
   margin-top: 110px;
-  
-  
+
+
   margin-bottom: 20px;
 }
 
@@ -316,7 +316,7 @@ h6 {
 
 footer{
     background: #2b2d31;
-    height: 700px; 
+    height: 700px;
 
   }
 
@@ -425,15 +425,15 @@ h4,h5{
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
- 
+
 }
   padding: 9px 10px 9px 32px;
   width: 55px;
-        
+
 
   </style>
 </head>
-<body>                 
+<body>
 
 
   <div class="overlay fixed-top"></div>
@@ -446,7 +446,7 @@ h4,h5{
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        
+
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -456,31 +456,31 @@ h4,h5{
                           <ul class="nav navbar-nav">
                             <li class="col-md-2" ">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                                <img src="assets/search.png" style="width: 30px;">
+                                <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
                                 <a class="nav-link" href="#" style="margin-left: 500px;">
-                                  <img src="assets/logo.jpeg" style="width: 40px; align:center;">
+                                  <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
                                 </a>
                             </li>
                             <li class="nav-item">
-                              
+
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
                                 <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
-                                
+
                             </li>
                         </ul>
                       </div>
-                        
-                    </div>                      
+
                     </div>
-                    
+                    </div>
+
             </nav>
 </div>
     <div class="wrapper">
@@ -515,13 +515,13 @@ h4,h5{
               <div style="border-top: 5px solid grey;">
                 <li class="active" style="background-color: black;">
                   <a href="#">Sign In</a>
-                    
+
                 </li>
               </div>
-                
-                
-                
-              
+
+
+
+
             </ul>
 
             <!-- <ul class="list-unstyled CTAs">
@@ -551,7 +551,7 @@ h4,h5{
     <div class="col-lg-2">
     <div class="container">
       <input   type="text" placeholder="Search...">
-      <button id="search" type="submit"><i class="fa fa-search"></i></button> 
+      <button id="search" type="submit"><i class="fa fa-search"></i></button>
       <hr id="hrpr">
           <div> <h2 id="nav1" href="#">Filter Product:</h2></div>
 
@@ -580,69 +580,69 @@ h4,h5{
               <input type="radio" value="Stock"> Stock <br>
               <input type="radio" value="Pre-Order"> Pre-Order <br>
             </div>
-           
+
 
     </div>
-        
+
 </div>
 <div class="col-lg-8">
     <div class="row">
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="img/6.png" width="250px" height="300px">
+    <img id="img1" src=" <?php echo base_url('img/12.png')  ?> " width="250px" height="300px">
     <button class="btn1"></button>
       </div>
       <h6>HOODIE</h6>
       </div>
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="img/7.png" width="250px" height="300px">
+    <img id="img1" src=" <?php echo base_url('img/2.png')  ?> " width="250px" height="300px">
     <button class="btn1"></button>
       </div>
       <h6>HOODIE</h6>
       </div>
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="img/8.png" width="250px" height="300px">
+    <img id="img1" src=" <?php echo base_url('img/3.png')  ?> " width="250px" height="300px">
     <button class="btn1"></button>
       </div>
       <h6>HOODIE</h6>
     </div>
     <div class="col-lg-3">
       <div class="container7">
-    <img id="img1" src="img/9.png" width="250px" height="300px">
+    <img id="img1" src=" <?php echo base_url('img/4.png')  ?> " width="250px" height="300px">
     <button class="btn1"></button>
     </div>
     <h6>HOODIE</h6>
 </div>
-    
-    
+
+
     </div>
 <div class="row">
     <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/6.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/5.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/7.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/13.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/8.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/7.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
 </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/9.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/8.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
 </div>
 <h6>HOODIE</h6>
@@ -653,21 +653,21 @@ h4,h5{
 <div class="row">
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/6.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/9.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/7.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/10.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
   </div>
 <div class="col-lg-3">
   <div class="container7">
-<img id="img2" src="img/8.png" width="250px" height="300px">
+<img id="img2" src=" <?php echo base_url('img/11.png')  ?> " width="250px" height="300px">
 <button class="btn2"></button>
   </div>
   <h6>HOODIE</h6>
@@ -722,7 +722,7 @@ h4,h5{
           <input type="text" name="email" placeholder="  discount@me.com" class="email_input">
           <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
         </div>
-         
+
       </div>
   </div>
 </div>
@@ -750,7 +750,7 @@ h4,h5{
 
     <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sell</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter; ">How it works</a>
@@ -766,7 +766,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">About Us</a>
@@ -792,7 +792,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Blank</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Shop Blank</a>
@@ -812,7 +812,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Sign In</a>
@@ -825,7 +825,7 @@ h4,h5{
 
    <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">us@cottonbureau.com</a>
@@ -853,6 +853,6 @@ h4,h5{
         © Cotton Bureau. All rights reserved.
       </div>
   </div>
-    
+
 </footer>
 </html>
