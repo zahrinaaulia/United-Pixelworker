@@ -142,8 +142,8 @@
       text-transform: uppercase;
       letter-spacing: .75px;
       font-weight: 700;
-      width: 320px;
-      height: 70px;
+      width: 400px;
+      height: 100px;
       font-family: canada-type-gibson,Avenir Next,Avenir,sans-serif;
       font-weight: 800;
       font-style: normal;
@@ -494,6 +494,17 @@ a.article:hover {
   height: 150px;
 }
 
+.dot{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  padding-top: 0px;
+
+}
+
 
 
 
@@ -628,19 +639,40 @@ a.article:hover {
             <img src="<?php echo base_url();?>img/6.PNG" style="margin-left: 40px; margin-top: 50px;">  
         </div>
         <div class="col-md-6">
-          <div style="border: 1px solid; width: 700px; height: 800px; margin-top: 40px; margin-left: 70px;">
-            <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;"> FIT </span></p>
-            <button style="width: 550px; height: 70px; font-size: 20px; margin-left: 100px; background-color: white; border:1px groove #d3d3d3;border-radius: 5px;"> UNISEX</button>
-            <p style="margin-left: 40px; padding-top: 40px;"> 02. <span style="color: black;"> STYLE </span></p>
-             <button style="width: 550px; height: 100px; font-size: 20px; margin-left: 100px; background-color: white; border:1px groove #d3d3d3;border-radius: 5px;"><i class="fa fa-tshirt" style="float: left; margin-left: 30px; width: 80px; height: 80px;"></i><h1 style="font-size: 20px; float: left; padding-top: 10px; margin-left: 10px; ">Standard Tee</h1><br/>
-              <h1  style="font-size: 15px; float: left; padding-top: 5px; margin-left: 10px; color: grey; " >Next level, we've been used same shirt for years</h1></button>
-              <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;">MATERIAL AND COLOR </span></p>
-               <button style="width: 150px; height: 100px;  margin-left: 100px; background-color: white; border:1px groove #d3d3d3; border-radius: 5px;"> UNISEX</button>
-          </div>
-          
+            <div style="border: 1px solid; width: 700px; height: 1200px; margin-top: 40px; margin-left: 70px;">
+                <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;"> FIT </span></p>
+                    <button style="width: 550px; height: 70px; font-size: 20px; margin-left: 100px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;"> UNISEX</button>
+                <p style="margin-left: 40px; padding-top: 40px;"> 02. <span style="color: black;"> STYLE </span></p>
+                    <button style="width: 550px; height: 100px; font-size: 20px; margin-left: 100px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;"><i class="fa fa-tshirt" style="float: left; margin-left: 30px; width: 80px; height: 80px;"></i><h1 style="font-size: 20px; float: left; padding-top: 10px; margin-left:10px;">Hoodie</h1><br/>
+                          <h1  style="font-size: 15px; float:left; padding-top: 5px; margin-right: 40px; color: grey; ">Next level, we've been used same shirt for years</h1></button>
+                <p style="margin-left: 40px; padding-top: 40px;"> 03. <span style="color: black;">MATERIAL AND COLOR </span></p>
+                    <button style="width: 150px; height: 150px;  margin-left: 100px; background-color: white; border:1px solid #d3d3d3; border-radius: 5px;"><span class="dot"></span><h1 style="font-size: 15px; padding-top: 5px; color: grey; ">WHITE</h1><h1 style="font-size: 15px; padding-top: 5px; color: grey; "> 100% COTTON </h1></button>
+                <p style="margin-left: 40px; padding-top: 40px;"> 04. <span style="color: black;"> SIZE </span></p>
+                      <div style="margin-left: 70px; margin-bottom: 10px">
+                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px; color: grey;"> S</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;"> M</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;"> L</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;"> XL</button>
+                      </div>
+                      <div style="margin-left: 70px;">
+                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">2X</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">3X</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">4X</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;">5X</button>
+                      </div>
+                <div class="container-fluid">
+                    <p style="margin-left: 10px; margin-top: 80px; color: black; font-size: 90px;font font-weight:lighter; float: left;">$27 </span></p>
+                    <input class="button" type="submit" value="ADD TO CHART" style="float:right; margin-top: 110px; ">
 
-        </div>
+                </div>
+                    
+                </div>
+                </div>
+            </div>
+            aa
       </div>
+       
+
       
     </div>
   </div>
