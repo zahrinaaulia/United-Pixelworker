@@ -31,4 +31,8 @@ class login_controller extends CI_Controller{
 	function product(){
 		$this->load->view('productnew');
 	}
+
+	function shipping(){
+		$this->load->view('shipping_view');
+	}
 }

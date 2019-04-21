@@ -594,17 +594,49 @@ h4,h5{
     <div class="container_5">
 
            <div> <h1 href="#">Order History</h1></div>
-
-           <hr id="hror" style="width: 1300px;">
-           <div class="row">
-           <h2 style="font-size: 20px; padding-left: 20px; padding-right: 50px;">ORDER</h2>
-           <h2 style="font-size: 20px; padding-left: 100px;">ORDER DATE</h2>
-           <h2 style="font-size: 20px; padding-left: 150px;">TOTAL</h2>
-           <h2 style="font-size: 20px; padding-left: 200px;">PRODUCT</h2>
-           <h2 style="font-size: 20px; padding-left: 250px;">STATUS</h2>
-           </div>
-           <hr style="width: 1300px;">
-           </div>
+          <table class="table" style='margin-top:50px;'>
+    <thead>
+      <tr>
+        <th style='padding-top:20px; padding-bottom:20px;'>ORDER#</th>
+        <th style='padding-top:20px; padding-bottom:20px;'>ORDER DATE</th>
+        <th style='padding-top:20px; padding-bottom:20px;'>TOTAL</th>
+        <th style='padding-top:20px; padding-bottom:20px;'>PRODUCT</th>
+        <th style='padding-top:20px; padding-bottom:20px;'>STATUS</th>
+        <th style='padding-top:20px; padding-bottom:20px;'>ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'><button type="button" class="btn btn-light">EDIT</button>
+        <button type="button" class="btn btn-light">DELETE</button></td>
+      </tr>
+      <tr>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'><button type="button" class="btn btn-light">EDIT</button>
+        <button type="button" class="btn btn-light">DELETE</button></td>
+      </tr>
+      <tr>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'></td>
+        <td style='padding-top:10px; padding-bottom:10px;'><button type="button" class="btn btn-light">EDIT</button>
+        <button type="button" class="btn btn-light">DELETE</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 
 </div>
 </div>
