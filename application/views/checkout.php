@@ -523,9 +523,12 @@ a.article:hover {
 }
 
 .custom-checkbox {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  width: 150px;
+  height: 50px;
+  border:1px solid #d3d3d3;
+  border-radius: 5px;
+  color: grey;
+
 }
 
 .custom-checkbox-input {
@@ -534,15 +537,21 @@ a.article:hover {
 
 .custom-checkbox-text {
   padding: 1rem;
-  background-color: #aaa;
-  color: #555;
+  background-color: white;
+  color: grey;
   cursor: pointer;
   user-select: none;
+  font-size: 15px;
+
 }
 
 .custom-checkbox-input:checked ~ .custom-checkbox-text {
-  background-color: black;
+
+  background-color: red;
   color: white;
+  width: 150px;
+  height: 50px;
+
 }
 
 
@@ -663,33 +672,42 @@ a.article:hover {
         </div>
         <div class="col-md-6">
             <div style="border: 1px solid; width: 700px; height: 1200px; margin-top: 40px; margin-left: 70px;">
-                <form action="POST">
-                  <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;"> FIT </span></p>
-                  <label class="custom-checkbox">
-                      <input type="hidden" name="alarm" value="false" />
-                      <input class="custom-checkbox-input" name="alarm" value="unisex" type="checkbox">
-                      <span class="custom-checkbox-text">UNISEX</span>
-                    </label>
-    
-                  <p style="margin-left: 40px; padding-top: 40px;"> 02. <span style="color: black;"> STYLE </span></p>
-                      <button style="width: 550px; height: 100px; font-size: 20px; margin-left: 100px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;"><i class="fa fa-tshirt" style="float: left; margin-left: 30px; width: 80px; height: 80px;"></i><h1 style="font-size: 20px; float: left; padding-top: 10px; margin-left:10px;">Hoodie</h1><br/>
-                            <h1  style="font-size: 15px; float:left; padding-top: 5px; margin-right: 40px; color: grey; ">Next level, we've been used same shirt for years</h1></button>
-                  <p style="margin-left: 40px; padding-top: 40px;"> 03. <span style="color: black;">MATERIAL AND COLOR </span></p>
-                      <button style="width: 150px; height: 150px;  margin-left: 100px; background-color: white; border:1px solid #d3d3d3; border-radius: 5px;"><span class="dot"></span><h1 style="font-size: 15px; padding-top: 5px; color: grey; ">WHITE</h1><h1 style="font-size: 15px; padding-top: 5px; color: grey; "> 100% COTTON </h1></button>
-                  <p style="margin-left: 40px; padding-top: 40px;"> 04. <span style="color: black;"> SIZE </span></p>
-                        <div style="margin-left: 70px; margin-bottom: 10px">
-                              <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px; color: grey;"> S</button>
-                              <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;"> M</button>
-                              <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;"> L</button>
-                              <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;"> XL</button>
-                        </div>
-                        <div style="margin-left: 70px;">
-                              <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">2X</button>
-                              <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">3X</button>
-                              <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">4X</button>
-                              <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;">5X</button>
-                        </div>
-            </form>
+                <p style="margin-left: 40px; padding-top: 40px;"> 01. <span style="color: black;"> FIT </span></p>
+                    <button style="width: 550px; height: 70px; font-size: 20px; margin-left: 100px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;"> UNISEX</button>
+                <p style="margin-left: 40px; padding-top: 40px;"> 02. <span style="color: black;"> STYLE </span></p>
+                    <button style="width: 550px; height: 100px; font-size: 20px; margin-left: 100px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;"><i class="fa fa-tshirt" style="float: left; margin-left: 30px; width: 80px; height: 80px;"></i><h1 style="font-size: 20px; float: left; padding-top: 10px; margin-left:10px;">Hoodie</h1><br/>
+                          <h1  style="font-size: 15px; float:left; padding-top: 5px; margin-right: 40px; color: grey; ">Next level, we've been used same shirt for years</h1></button>
+                <p style="margin-left: 40px; padding-top: 40px;"> 03. <span style="color: black;">MATERIAL AND COLOR </span></p>
+                    <button style="width: 150px; height: 150px;  margin-left: 100px; background-color: white; border:1px solid #d3d3d3; border-radius: 5px;"><span class="dot"></span><h1 style="font-size: 15px; padding-top: 5px; color: grey; ">WHITE</h1><h1 style="font-size: 15px; padding-top: 5px; color: grey; "> 100% COTTON </h1></button>
+                <p style="margin-left: 40px; padding-top: 40px;"> 04. <span style="color: black;"> SIZE </span></p>
+                      <div style="margin-left: 70px; margin-bottom: 10px">
+                        <label class="custom-checkbox">
+                            <input type="hidden" name="alarm" value="False"/>
+                            <input class="custom-checkbox-input" name="alarm" value="s" type="checkbox">
+                            <span class="custom-checkbox-text">S</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="m" type="checkbox">
+                            <span class="custom-checkbox-text">M</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="l" type="checkbox">
+                            <span class="custom-checkbox-text">L</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="xl" type="checkbox">
+                            <span class="custom-checkbox-text">XL</span>
+                        </label>
+                      </div>
+                      <div style="margin-left: 70px;">
+                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">2X</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px; background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">3X</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;color: grey;">4X</button>
+                            <button style="width: 150px; height: 50px; font-size: 15px;  background-color: white; border:1px solid #d3d3d3;border-radius: 5px;">5X</button>
+                      </div>
                 <div class="container-fluid">
                     <p style="margin-left: 10px; margin-top: 80px; color: black; font-size: 90px;font font-weight:lighter; float: left;">$27 </span></p>
                     <input class="button" type="submit" value="ADD TO CHART" style="float:right; margin-top: 110px; ">
@@ -699,7 +717,7 @@ a.article:hover {
                 </div>
                 </div>
             </div>
-
+            aa
       </div>
 
 
