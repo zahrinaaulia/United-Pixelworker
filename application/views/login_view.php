@@ -522,7 +522,7 @@ a.article:hover {
                   </li>
                   <li class="col-md-2">
                     <div style="margin-left: 70px; padding-top: 10px;">
-                      <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                      <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
                       <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                     </div>
                   </li>
@@ -548,7 +548,7 @@ a.article:hover {
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
-                    <a href='#'>All Product </a>
+                    <a href='<?php echo site_url(); ?>/login_controller/index'>All Product </a>
                     <a href="#"> Blank</a>
                     <a href="#"> Search </a>
                 </li>
