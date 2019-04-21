@@ -624,7 +624,7 @@ a.article:hover {
               <div class="inputdata">
                 <label>Password</label>
                 <a href="#" class="forgot-password">Forgot Password?</a>
-                <input type="text" id="input" name="passwod" placeholder="" required/>
+                <input type="password" id="input" name="passwod" placeholder="" required/>
               </div>
 
               <input class="button" type="submit" value="SIGN IN ">

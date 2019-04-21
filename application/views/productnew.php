@@ -574,11 +574,11 @@ h4,h5{
 
            <div> <h2 id="nav1" href="#">Ananda Miarta</h2></div>
            <hr id="hr1">
-           <b id="nav2" href="#" class="btn btn-lg"> Product </b>
+           <b id="nav2" href="<?php echo site_url();?>/login_controller/product" class="btn btn-lg"> Product </b>
            <br>
-           <b id="nav2" href="#" class="btn btn-lg"> Profile </b>
+           <b id="nav2" href="<?php echo site_url();?>/login_controller/profile" class="btn btn-lg"> Profile </b>
            <br>
-           <b id="nav2" href="#" class="btn btn-lg"> Order </b>
+           <b id="nav2" href="<?php echo site_url();?>/login_controller/order" class="btn btn-lg"> Order </b>
            <br>
            <hr id="hr2">
            <b id="nav3" href="#" class="btn btn-lg"> Submit a Design </b>
@@ -592,7 +592,7 @@ h4,h5{
 <div class="col-lg-8">
     <div class="container_5">
 
-           <div> <h1 href="#">Inactive Order</h1></div>
+           <div> <h1 href="#">Inactive Product</h1></div>
            <hr id="hror">
            </div>
 
