@@ -27,12 +27,24 @@ class login_controller extends CI_Controller{
 
 	public function register(){
 
+		$data = array(
+			'Email' =>$this->input->post('Email'),
+			'Password'=> $this->input->post('Password')
+		);
 
+		$email_check = $this->login_model->email_check($data['Email']);
 
-
-
+		if($email_check){
+			$this->login_model->register_user($data);
+			$this->session->set_flashdata('success_msg','Register successfully');
+			redirect('login_controller/profilenew');
+		} else{
+			$this->session->set_flashdata('error_msg','Error occured, Try again');
+			redirect('login_controller/signup_view');
+		}
 
 	}
+
 	public function login(){
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');

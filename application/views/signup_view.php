@@ -595,12 +595,12 @@ a.article:hover {
           <h2> Sign up </h2>
               <div class="inputdata">
                 <label>Email</label>
-                <input type="text" id="input" name="username" placeholder="  email@pixelcorp.com" required/>
+                <input type="text" id="input" name="Email" placeholder="  email@pixelcorp.com" required/>
               </div>
               <div class="inputdata">
                 <label>Password</label>
                 <a href="#" class="forgot-password">Forgot Password?</a>
-                <input type="password" id="input" name="passwod" placeholder="" required/>
+                <input type="password" id="input" name="Password" placeholder="" required/>
               </div>
 
               <div><p>We reccomend at least 8 characters long, avoiding patterns and common words/phrases.See Google's<a href="#" style="font-size:15px;color: red;"> creating a strong password </a>guide for more help</p>
