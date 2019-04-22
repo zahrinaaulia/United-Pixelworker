@@ -464,7 +464,6 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 20px;
-
     transition: all 0.3s;
     position: absolute;
     top: 0;
@@ -569,10 +568,11 @@ a.article:hover {
                 </li>
               </div>
 
-
-
-
             </ul>
+
+          </nav>
+
+        </div>
 <div class="mainContainer">
           <form class="form_1">
           <h2> Sign up </h2>

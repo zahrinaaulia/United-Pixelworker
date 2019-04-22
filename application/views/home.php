@@ -427,10 +427,6 @@ h4,h5{
   text-align: center;
 
 }
-  padding: 9px 10px 9px 32px;
-  width: 55px;
-
-
   </style>
 </head>
 <body>
@@ -438,7 +434,7 @@ h4,h5{
 
   <div class="overlay fixed-top"></div>
 
-            <!-- Page Content  -->
+
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
@@ -498,7 +494,7 @@ h4,h5{
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
-                    <a href='<?php site_url();?>/login_controller/index'>All Product </a>
+                    <a href='<?php echo site_url();?>/login_controller/index'>All Product </a>
                     <a href="#"> Blank</a>
                     <a href="#"> Search </a>
                 </li>
