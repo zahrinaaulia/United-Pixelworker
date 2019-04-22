@@ -533,7 +533,7 @@ h4,h5{
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
-                    <a href='#'>All Product </a>
+                    <a href="<?php echo site_url();?>/login_controller/index">All Product </a>
                     <a href="#"> Blank</a>
                     <a href="#"> Search </a>
                 </li>
@@ -566,11 +566,11 @@ h4,h5{
 
            <div> <h2 id="nav1" href="#">Ananda Miarta</h2></div>
            <hr id="hr1">
-           <b id="nav2" href="<?php echo site_url();?>/login_controller/product" class="btn btn-lg"> Product </b>
+           <b id="nav2" href="#"> Product </b>
            <br>
-           <b id="nav2" href="<?php echo site_url();?>/login_controller/profile" class="btn btn-lg"> Profile </b>
+           <b id="nav2" href="#"> Profile </b>
            <br>
-           <b id="nav2" href="<?php echo site_url();?>/login_controller/order" class="btn btn-lg"> Order </b>
+           <b id="nav2" href="#"> Order </b>
            <br>
            <hr id="hr2">
            <b id="nav3" href="#" class="btn btn-lg"> Submit a Design </b>

@@ -646,7 +646,7 @@ table{
               <div style="border-top: 1px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
-                    <a href='#'>All Product </a>
+                    <a href='<?php echo site_url();?>/login_controller/index'>All Product </a>
                     <a href="#"> Blank</a>
                     <a href="#"> Search </a>
                 </li>
