@@ -35,4 +35,8 @@ class login_controller extends CI_Controller{
 	function shipping(){
 		$this->load->view('shipping_view');
 	}
+
+	function submitdesign(){
+		$this->load->view('submitdesign_view');
+	}
 }
