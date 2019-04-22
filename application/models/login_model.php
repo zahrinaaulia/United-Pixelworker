@@ -22,5 +22,21 @@ class login_model extends CI_Model{
 
   }
 
+  public function update_user(){
+
+    $data = array(
+			'Email' =>$_SESSION['email'],
+			'Yourname' =>$this->input->post('Name'),
+			'Twitter' =>$this->input->post('Twitter'),
+			'Website' =>$this->input->post('Website'),
+			'Location' =>$this->input->post('Location'),
+			'Instagram' =>$this->input->post('Instagram')
+		);
+
+    $this->db->where('Email',$data['Email']);
+    $this->db->update('akun',$data);
+
+  }
+
 
 }

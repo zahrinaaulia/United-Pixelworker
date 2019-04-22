@@ -221,6 +221,7 @@ a.article:hover {
   margin-top: 100px;
   margin-right: 10px;
 
+
 }
 
 #navbar-id {
@@ -489,6 +490,7 @@ h4,h5{
 .container2{
   margin-top: 100px;
   margin-right: 10px;
+  display: flex;
 
 }
 
@@ -664,49 +666,42 @@ h4,h5{
 
 </div>
   <div>
+    <div style="display:flex;">
+      <div class="">
         <h2 id="pr"> Profile </h2>
-    <div class="container1">
+    <div class="container1" >
+          <form action="<?php echo site_url();?>/login_controller/update" method="POST">
             <div>
              <h2 id="name1"> YOUR NAME </h2>
-             <input id="input" type="text" name="name" placeholder="Senor Cotton">
+             <input id="input" type="text" name="Name" placeholder="Senor Cotton">
             </div>
 
-            <div>
-             <h2 id="text"> EMAIL </h2>
-             <input id="input" type="text" name="email" placeholder="you@yourname.com">
-            </div>
-
-            <div>
-             <h2 id="text"> PASSWORD </h2>
-             <input id="input" type="password" name="password" placeholder="" required>
-             <!-- <h5 id="text"> We recommend at least 8 characters long, avoiding patterns and common words/phrases. See Google's creating a strong password guide for more help. </h5> -->
-            </div>
 
             <div>
              <h2 id="text"> TWITTER </h2>
-             <input id="input" type="text" name="twitter" placeholder="@cottonbureau">
+             <input id="input" type="text" name="Twitter" placeholder="@cottonbureau">
             </div>
 
             <div>
              <h2 id="text"> INSTAGRAM </h2>
-             <input id="input" type="text" name="instagram" placeholder="@cottonbureau">
+             <input id="input" type="text" name="Instagram" placeholder="@cottonbureau">
             </div>
 
             <div>
              <h2 id="text"> WEBSITE </h2>
-             <input id="input" type="text" name="website" placeholder="https://cottonbureau.com">
+             <input id="input" type="text" name="Website" placeholder="https://cottonbureau.com">
             </div>
 
             <div>
              <h2 id="text"> LOCATION </h2>
-             <input id="input" type="text" name="location" placeholder="Pittsburgh, PA">
+             <input id="input" type="text" name="Location" placeholder="Pittsburgh, PA">
             </div>
-          </div>
           <hr id="hrbtn" style="margin-left: 1%;">
            <button type="Submit" class="btn btn-danger" id="btn1" style="background-color: red; color: white; margin-left: 15%;">Update Profile</button>
-        </div>
-
-<div class="col-lg-4">
+         </div>
+      </form>
+      </div>
+      <div class="">
         <div class="container2">
           <div class="flex-container" style='padding-top: 50px;'>
   <!-- <script>
@@ -729,6 +724,11 @@ h4,h5{
                   </div>
                   </div>
                   </div>
+      </div>
+    </div>
+
+<div class="col-lg-4">
+
 </div>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -50,7 +50,7 @@ class login_controller extends CI_Controller{
 		$password = $this->input->post('password');
 		$where = array(
 				'email' => $email,
-				'password' => md5($password)
+				'password' => $password
 		);
 		$cek =$this->login_model->cek_log('akun',$where)->row();
 		$query = $this->db->query("SELECT * FROM akun where email ='$email'");
@@ -77,6 +77,17 @@ class login_controller extends CI_Controller{
 			</form>
 			<?php
 		}
+
+	}
+
+	public function update() {
+
+
+
+		$this->login_model->update_user();
+		redirect('login_controller/profilenew');
+
+
 
 	}
 
