@@ -578,7 +578,15 @@ h4,h5{
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <?php
+
+                                if ( $this->session->userdata('status')) { ?>
+                                    <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?= $_SESSION['yourname'] ?> </button>
+                              <?php  } else { ?>
+                                  <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                              <?php }
+                                ?>
+
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 
@@ -602,7 +610,7 @@ h4,h5{
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components"  >
+            <ul class="list-unstyled components">
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -631,17 +639,7 @@ h4,h5{
 
 
             </ul>
-
-            <!-- <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul> -->
         </nav>
-
 </div>
 
 
@@ -652,16 +650,16 @@ h4,h5{
 
            <div> <h2 id="nav1" href="#">Ananda Miarta</h2></div>
            <hr id="hr1">
-           <b id="nav2" href="#" class="btn btn-lg"> Product </b>
+           <a id="nav2" href="#" class="btn btn-lg"> Product </a>
            <br>
-           <b id="nav2" href="#" class="btn btn-lg"> Profile </b>
+           <a id="nav2" href="#" class="btn btn-lg"> Profile </a>
            <br>
-           <b id="nav2" href="#" class="btn btn-lg"> Order </b>
+           <a id="nav2" href="#" class="btn btn-lg"> Order </a>
            <br>
            <hr id="hr2">
-           <b id="nav3" href="#" class="btn btn-lg"> Submit a Design </b>
+           <a id="nav3" href="#" class="btn btn-lg"> Submit a Design </a>
            <br>
-           <b id="nav3" href="#" class="btn btn-lg"> Sign Out </b>
+           <a id="nav3" href="<?php echo site_url();?>/login_controller/loggout" class="btn btn-lg"> Sign Out </a>
 
     </div>
 

@@ -458,10 +458,6 @@ h4,h5{
  margin-left: 50px;
 }
 
-  padding: 9px 10px 9px 32px;
-  width: 55px;
-
-
   </style>
 </head>
 <body>
@@ -485,9 +481,9 @@ h4,h5{
                     <div class="row" >
                       <div class="container_3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                                <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
+                                <img src=" <?php echo base_url('assets/search.png')?> " style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
@@ -496,15 +492,19 @@ h4,h5{
                                   <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
                                 </a>
                             </li>
-                            <li class="nav-item">
-
-                            </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <?php
+
+                                if ( $this->session->userdata('status')) { ?>
+                                    <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?= $_SESSION['yourname'] ?> </button>
+                              <?php  } else { ?>
+                                  <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                              <?php }
+                                ?>
+
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
-
                             </li>
                         </ul>
                       </div>
@@ -525,7 +525,7 @@ h4,h5{
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components"  ">
+            <ul class="list-unstyled components">
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -546,23 +546,9 @@ h4,h5{
               <div style="border-top: 5px solid grey;">
                 <li class="active" style="background-color: black;">
                   <a href="#">Sign In</a>
-
                 </li>
               </div>
-
-
-
-
             </ul>
-
-            <!-- <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul> -->
         </nav>
 
 </div>
@@ -638,6 +624,7 @@ h4,h5{
   </table>
   </div>
 
+</div>
 </div>
 </div>
 

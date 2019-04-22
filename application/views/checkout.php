@@ -595,7 +595,7 @@ table{
                     <div class="row" >
                       <div class="container3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                                 <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
@@ -611,8 +611,15 @@ table{
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
-                                 <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
+                                <?php
+
+                                if ( $this->session->userdata('status')) { ?>
+                                    <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?= $_SESSION['yourname'] ?> </button>
+                                <?php  } else { ?>
+                                  <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <?php }
+                                ?>
+                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 
                             </li>
@@ -635,7 +642,7 @@ table{
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components"  ">
+            <ul class="list-unstyled components">
               <div style="border-top: 1px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -659,13 +666,7 @@ table{
 
                 </li>
               </div>
-
-
-
-
             </ul>
-
-
         </nav>
 
 </div>

@@ -506,7 +506,7 @@ a.article:hover {
         <div class="row" >
             <div class="container3">
                 <ul class="nav navbar-nav">
-                  <li class="col-md-2" ">
+                  <li class="col-md-2" >
                     <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                       <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
                       <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
@@ -521,7 +521,15 @@ a.article:hover {
                   </li>
                   <li class="col-md-2">
                     <div style="margin-left: 70px; padding-top: 10px;">
-                      <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                      <?php
+
+                      if ( $this->session->userdata('status')) { ?>
+                          <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?= $_SESSION['yourname'] ?> </button>
+                    <?php  } else { ?>
+                        <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                    <?php }
+                      ?>
+
                       <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                     </div>
                   </li>
@@ -543,7 +551,7 @@ a.article:hover {
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components"  ">
+            <ul class="list-unstyled components">
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -574,22 +582,22 @@ a.article:hover {
 
         </div>
 <div class="mainContainer">
-          <form class="form_1">
+          <form action="<?php echo site_url('login_controller/login'); ?>" method="POST" class="form_1">
           <h2> Sign up </h2>
               <div class="inputdata">
                 <label>Email</label>
-                <input type="text" id="input" name="username" placeholder="  email@pixelcorp.com" required/>
+                <input type="text" id="input" name="email" placeholder="  email@pixelcorp.com" required/>
               </div>
               <div class="inputdata">
                 <label>Password</label>
                 <a href="#" class="forgot-password">Forgot Password?</a>
-                <input type="password" id="input" name="passwod" placeholder="" required/>
+                <input type="password" id="input" name="password" placeholder="" required/>
               </div>
 
               <input class="button" type="submit" value="SIGN IN ">
 
                <div class="toggle-link" style="font-size:15px;">
-                Already have an account?<a href="<?php echo site_url();?>/login_controller/register" style="font-size:15px; color: red"> Create here.</a>
+                Already have an account?<a href="<?php echo site_url();?>/login_controller/register_view" style="font-size:15px; color: red"> Create here.</a>
               </div>
 
         </form>

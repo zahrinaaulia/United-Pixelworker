@@ -457,6 +457,38 @@ h4,h5{
  margin-left: 50px;
 }
 
+.custom-checkbox {
+  width: 150px;
+  height: 53px;
+  border:1px solid #d3d3d3;
+  border-radius: 5px;
+  color: grey;
+
+}
+
+.custom-checkbox-input {
+  display: none;
+
+}
+
+.custom-checkbox-text {
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+  padding: 19px 68px 15px;
+  border-radius: 5px;
+
+}
+
+.custom-checkbox-input:checked ~ .custom-checkbox-text{
+
+  background-color: red;
+  color: white;
+
+}
+
 
 
   </style>
@@ -482,15 +514,15 @@ h4,h5{
                     <div class="row" >
                       <div class="container_3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2">
+                            <li class="col-md-2" ">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
-                                <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
+                                <img src="assets/search.png" style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
                                 <a class="nav-link" href="#" style="margin-left: 500px;">
-                                  <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
+                                  <img src="assets/logo.jpeg" style="width: 40px; align:center;">
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -506,6 +538,7 @@ h4,h5{
                                   <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
                               <?php }
                                 ?>
+
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 
@@ -529,7 +562,7 @@ h4,h5{
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components">
+            <ul class="list-unstyled components"  ">
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -553,7 +586,20 @@ h4,h5{
 
                 </li>
               </div>
+
+
+
+
             </ul>
+
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul> -->
         </nav>
 
 </div>
@@ -566,11 +612,11 @@ h4,h5{
 
            <div> <h2 id="nav1" href="#">Ananda Miarta</h2></div>
            <hr id="hr1">
-           <b id="nav2" href="<?php echo site_url();?>/login_controller/product" class="btn btn-lg"> Product </b>
+           <b id="nav2" href="#" class="btn btn-lg"> Product </b>
            <br>
-           <b id="nav2" href="<?php echo site_url();?>/login_controller/profile" class="btn btn-lg"> Profile </b>
+           <b id="nav2" href="#" class="btn btn-lg"> Profile </b>
            <br>
-           <b id="nav2" href="<?php echo site_url();?>/login_controller/order" class="btn btn-lg"> Order </b>
+           <b id="nav2" href="#" class="btn btn-lg"> Order </b>
            <br>
            <hr id="hr2">
            <b id="nav3" href="#" class="btn btn-lg"> Submit a Design </b>
@@ -587,7 +633,71 @@ h4,h5{
            <div> <h1 href="#">Inactive Product</h1></div>
            <hr id="hror">
            </div>
+           <div class="row">
+           <div>
+           <img id="img10" src="img/7.png" style="width: 400px; height: 400px; margin-left: 50px;">
+</div>
 
+<div style="margin-left: 75px;">
+  <h2 style="font-size: 25px;">Id Product</h2>
+  <input class="text" style="width: 600px;">
+  <h2 style="font-size: 25px;">Title</h2>
+  <input class="text" style="width: 600px;">
+  <h2 style="font-size: 25px;">Price</h2>
+  <input class="text" style="width: 600px;">
+  <h2 style="font-size: 25px;">Material and Color</h2>
+  <input class="text" style="width: 600px;">
+  <div class="container10" style="margin-top: 30px;">
+  <h2 style="font-size: 25px;"> Size </h2>
+  <div>
+    <label class="custom-checkbox"align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False"/>
+                            <input class="custom-checkbox-input" name="alarm" value="s" type="checkbox">
+                            <span class="custom-checkbox-text" >S</span>
+                        </label>
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="m" type="checkbox">
+                            <span class="custom-checkbox-text">M</span>
+                        </label>
+                        <label class="custom-checkbox"align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="l" type="checkbox">
+                            <span class="custom-checkbox-text">L</span>
+                        </label>
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="xl" type="checkbox">
+                            <span class="custom-checkbox-text">XL</span>
+                        </label>
+
+  </div>
+  <div>
+  <label class="custom-checkbox"align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False"/>
+                            <input class="custom-checkbox-input" name="alarm" value="s" type="checkbox">
+                            <span class="custom-checkbox-text">2X</span>
+                        </label>
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="m" type="checkbox">
+                            <span class="custom-checkbox-text">3X</span>
+                        </label>
+                        <label class="custom-checkbox"align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="l" type="checkbox">
+                            <span class="custom-checkbox-text">4X</span>
+                        </label>
+                        <label class="custom-checkbox" align="center" style="padding-top:20px;">
+                            <input type="hidden" name="alarm" value="False" />
+                            <input class="custom-checkbox-input" name="alarm" value="xl" type="checkbox">
+                            <span class="custom-checkbox-text">5X</span>
+                        </label>
+                      </div>
+           <button type="Submit" class="btn btn-danger" id="btn1" style="background-color: red; color: white; margin-top: 50px;">Update Product</button>
+           <button type="Submit" class="btn btn-danger" id="btn1" style="background-color: rgb(140, 140, 140); color: white; margin-left: 50px; margin-top: 50px">Delete Product</button>
+                      </div>
+</div>
 </div>
 </div>
 </div>

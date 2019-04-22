@@ -511,14 +511,14 @@ a.article:hover {
                     <div class="row" >
                       <div class="container3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                                 <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
-                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                <a class="nav-link" href="<?php echo site_url();?>/login_controller/home" style="margin-left: 500px;">
                                   <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
                                 </a>
                             </li>
@@ -527,19 +527,24 @@ a.article:hover {
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <?php
+
+                                if ( $this->session->userdata('status')) { ?>
+                                    <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?= $_SESSION['yourname'] ?> </button>
+                              <?php  } else { ?>
+                                  <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                              <?php }
+                                ?>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
-
                             </li>
                         </ul>
                       </div>
-
                     </div>
-                    </div>
+                  </div>
+                </nav>
+            </div>
 
-            </nav>
-</div>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar" >
@@ -551,7 +556,7 @@ a.article:hover {
                 <h3>Bootstrap Sidebar</h3>
             </div>
 
-            <ul class="list-unstyled components"  ">
+            <ul class="list-unstyled components ">
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
@@ -580,49 +585,13 @@ a.article:hover {
 
 
             </ul>
-
-            <!-- <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul> -->
         </nav>
 
 </div>
 
-      <!-- <nav id="nav-id" class="navbar navbar-default navbar-fixed-top mainNavbar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4">
-                <ul class="nav navbar-nav">
-                    <li ><button class="navbar-toggler offCanvasToggler d-inline-flex mr-2" style="color: red;" ><span class="navbar-toggler-icon" style="color: red;"></span></button></li>
-                    <li>
-                      <img src="<?php echo base_url();?>assets/search.png" style="width: 20px; height: 20px; background-color: white; margin-left: 30px;">
-                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>
-                      </li>
 
-
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav navbar-nav" style="margin-left: 250px">
-                    <li><a href="#"style="color: red;"><img src="assets/logo.jpeg" width="50px" height="55px"></a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav navbar-nav" style="margin-left:320px;">
-                    <li><a href="#" class="btn btn-default btn-lg"style="color: red;"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
-                    <li><a href="#" class="btn btn-default btn-lg"style="color: red;"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-       --><div class="mainContainer">
-          <form class="form_1">
+       <div class="mainContainer">
+          <form action="<?php echo site_url('login_controller/register');?>" method="POST"class="form_1">
           <h2> Sign up </h2>
               <div class="inputdata">
                 <label>Email</label>
@@ -642,7 +611,7 @@ a.article:hover {
               <input class="button" type="submit" value="SIGN UP">
 
               <div class="toggle-link" style="font-size:15px;">
-                Already have an account?<a href="<?php echo site_url();?>/login_controller/login" style="font-size:15px; color: red"> Sign in here.</a>
+                Already have an account?<a href="<?php echo site_url();?>/login_controller/login_view" style="font-size:15px; color: red"> Sign in here.</a>
               </div>
 
         </form>
