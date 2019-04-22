@@ -454,8 +454,13 @@ h4,h5{
                     <div class="row" >
                       <div class="container_3">
                           <ul class="nav navbar-nav">
+<<<<<<< HEAD
                             <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
+=======
+                            <li class="col-md-2" ">
+                              <form id="search" style="width: 600px; align:center; margin-bottom:30px;">
+>>>>>>> a1249943c80fbb15efc32d20a11129e13b65618e
                                 <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
@@ -470,7 +475,11 @@ h4,h5{
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
+<<<<<<< HEAD
                                 <a href="<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
+=======
+                                <button onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+>>>>>>> a1249943c80fbb15efc32d20a11129e13b65618e
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 
@@ -498,7 +507,11 @@ h4,h5{
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
+<<<<<<< HEAD
                     <a href='<?php echo site_url();?>/login_controller/home'>All Product </a>
+=======
+                    <a href='<?php site_url();?>/login_controller/index'>All Product </a>
+>>>>>>> a1249943c80fbb15efc32d20a11129e13b65618e
                     <a href="#"> Blank</a>
                     <a href="#"> Search </a>
                 </li>

@@ -5,7 +5,7 @@ class login_controller extends CI_Controller{
 
 
 	function index(){
-		$this->load->view('login_view');
+		$this->load->view('home');
 	}
 
 	function register(){
@@ -16,8 +16,8 @@ class login_controller extends CI_Controller{
 		$this->load->view('checkout');
 	}
 
-	function home(){
-		$this->load->view('home');
+	function login(){
+		$this->load->view('login_view');
 	}
 
 	function order(){
@@ -38,5 +38,9 @@ class login_controller extends CI_Controller{
 
 	function shipping(){
 		$this->load->view('shipping_view');
+	}
+
+	function submitdesign(){
+		$this->load->view('submitdesign_view');
 	}
 }

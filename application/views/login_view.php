@@ -522,7 +522,11 @@ a.article:hover {
                   </li>
                   <li class="col-md-2">
                     <div style="margin-left: 70px; padding-top: 10px;">
+<<<<<<< HEAD
                       <a href="<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
+=======
+                      <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+>>>>>>> a1249943c80fbb15efc32d20a11129e13b65618e
                       <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                     </div>
                   </li>
@@ -548,7 +552,7 @@ a.article:hover {
               <div style="border-top: 5px solid grey;">
                 <p style="font-size: 20px; color: red;">Cotton Bureau</p>
                 <li class="active" style="background-color: black;">   <p>SHOP</p>
-                    <a href='#'>All Product </a>
+                    <a href='<?php echo site_url(); ?>/login_controller/index'>All Product </a>
                     <a href="#"> Blank</a>
                     <a href="#"> Search </a>
                 </li>
@@ -556,7 +560,7 @@ a.article:hover {
               <div style="border-top: 5px solid grey;">
                 <li>
                   <p>SELL</p>
-                    <a href="#">Submit a Design</a>
+                    <a href="<?php echo site_url(); ?>/login_controller/submitdesign">Submit a Design</a>
                     <a href="#">How it works</a>
                     <a href="#">Cotton Bureau Plus</a>
                     <a href="#">FAQ</a>
@@ -573,48 +577,7 @@ a.article:hover {
 
 
             </ul>
-
-            <!-- <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul> -->
-        </nav>
-
-</div>
-
-      <!-- <nav id="nav-id" class="navbar navbar-default navbar-fixed-top mainNavbar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4">
-                <ul class="nav navbar-nav">
-                    <li ><button class="navbar-toggler offCanvasToggler d-inline-flex mr-2" style="color: red;" ><span class="navbar-toggler-icon" style="color: red;"></span></button></li>
-                    <li>
-                      <img src="<?php echo base_url();?>assets/search.png" style="width: 20px; height: 20px; background-color: white; margin-left: 30px;">
-                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>
-                      </li>
-
-
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav navbar-nav" style="margin-left: 250px">
-                    <li><a href="#"style="color: red;"><img src="assets/logo.jpeg" width="50px" height="55px"></a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="nav navbar-nav" style="margin-left:320px;">
-                    <li><a href="#" class="btn btn-default btn-lg"style="color: red;"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
-                    <li><a href="#" class="btn btn-default btn-lg"style="color: red;"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-       --><div class="mainContainer">
+<div class="mainContainer">
           <form class="form_1">
           <h2> Sign up </h2>
               <div class="inputdata">
