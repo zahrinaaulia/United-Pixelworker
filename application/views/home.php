@@ -427,6 +427,8 @@ h4,h5{
   text-align: center;
 
 }
+
+
   </style>
 </head>
 <body>
@@ -534,13 +536,8 @@ h4,h5{
 <div class="wrap">
 <nav id="navbar-id" class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-8">
-
-      </div>
-    </div>
-  </div>
 </nav>
+</div>
 
 <div class="row">
     <div class="col-lg-2">

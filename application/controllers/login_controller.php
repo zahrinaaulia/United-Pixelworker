@@ -85,11 +85,15 @@ class login_controller extends CI_Controller{
 
 
 		$this->login_model->update_user();
+
 		redirect('login_controller/profilenew');
 
 
 
 	}
+
+
+
 
 	public function loggout(){
 

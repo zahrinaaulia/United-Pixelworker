@@ -38,5 +38,13 @@ class login_model extends CI_Model{
 
   }
 
+  public function getDataUser(){
+      $this->db->where('Email');
+      $result = $this->db->get('akun');
+      return $row = $result->row_array(3);
+
+
+  }
+
 
 }

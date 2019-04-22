@@ -582,7 +582,7 @@ h4,h5{
                                 <?php
 
                                 if ( $this->session->userdata('status')) { ?>
-                                    <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?= $_SESSION['yourname'] ?> </button>
+                                    <button  onclick="window.location.href = '<?php echo site_url();?>/login_controller/profilenew'" style="font-size:24px; color: red; border: 0px; background-color: transparent;"> <?php echo $_SESSION['yourname']?> </button>
                               <?php  } else { ?>
                                   <button  onclick= "window.location.href = '<?php echo site_url();?>/login_controller/login_view'" style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
                               <?php }
@@ -635,9 +635,6 @@ h4,h5{
 
                 </li>
               </div>
-
-
-
 
             </ul>
         </nav>
