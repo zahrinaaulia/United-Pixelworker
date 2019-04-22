@@ -569,7 +569,7 @@ h4,h5{
                               </form>
                             </li>
                             <li class="col-md-8">
-                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                <a class="nav-link" href="<?php echo site_url();?>/login_controller/home" style="margin-left: 500px;">
                                   <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
                                 </a>
                             </li>
@@ -578,7 +578,7 @@ h4,h5{
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <a href="<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 

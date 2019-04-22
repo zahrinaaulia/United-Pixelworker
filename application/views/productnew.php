@@ -484,14 +484,14 @@ h4,h5{
                     <div class="row" >
                       <div class="container_3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                                 <img src=" <?php echo base_url('assets/search.png')  ?> " style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
-                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                <a class="nav-link" href="<?php echo site_url();?>/login_controller/home" style="margin-left: 500px;">
                                   <img src=" <?php echo base_url('assets/logo.jpeg') ?> " style="width: 40px; align:center;">
                                 </a>
                             </li>
@@ -500,7 +500,7 @@ h4,h5{
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <a href="<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 
@@ -574,11 +574,11 @@ h4,h5{
 
            <div> <h2 id="nav1" href="#">Ananda Miarta</h2></div>
            <hr id="hr1">
-           <b id="nav2" href="#" class="btn btn-lg"> Product </b>
+           <b id="nav2" href="<?php echo site_url();?>/login_controller/product" class="btn btn-lg"> Product </b>
            <br>
-           <b id="nav2" href="#" class="btn btn-lg"> Profile </b>
+           <b id="nav2" href="<?php echo site_url();?>/login_controller/profile" class="btn btn-lg"> Profile </b>
            <br>
-           <b id="nav2" href="#" class="btn btn-lg"> Order </b>
+           <b id="nav2" href="<?php echo site_url();?>/login_controller/order" class="btn btn-lg"> Order </b>
            <br>
            <hr id="hr2">
            <b id="nav3" href="#" class="btn btn-lg"> Submit a Design </b>
@@ -592,7 +592,7 @@ h4,h5{
 <div class="col-lg-8">
     <div class="container_5">
 
-           <div> <h1 href="#">Inactive Order</h1></div>
+           <div> <h1 href="#">Inactive Product</h1></div>
            <hr id="hror">
            </div>
 

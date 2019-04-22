@@ -28,7 +28,7 @@
 
   <style>
 
-   
+
     .btn-default{
       color: red;
       border: 0px;
@@ -39,7 +39,7 @@
 
     .navbar-default{
       background: white;
-      
+
     }
 
     #nav-id{
@@ -51,8 +51,8 @@
 
         background-image: url("<?php echo base_url();?>assets/background.png");
         background-repeat: no-repeat;
-        background-size: cover;  
-        
+        background-size: cover;
+
    }
 
    h2{
@@ -168,7 +168,7 @@
 
   footer{
     background: #2b2d31;
-    height: 900px; 
+    height: 900px;
     margin-top:0 ;
 
   }
@@ -251,7 +251,7 @@ h4,h5,h6{
     box-sizing: border-box;
     padding: 0 10px 0 10px;
     color: black;
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
     border-radius: 0px;
     font-size: 12px;
@@ -476,21 +476,21 @@ a.article:hover {
 }
 
 .container3{
-  
+
   width: 1600px;
   margin-left: 20px;
-  
+
 
 }
 .active{
-  background-color: black: 
+  background-color: black:
 }
 
-        
+
 
   </style>
 </head>
-<body>                 
+<body>
 
 
   <div class="overlay fixed-top"></div>
@@ -503,7 +503,7 @@ a.article:hover {
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        
+
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -511,33 +511,33 @@ a.article:hover {
                     <div class="row" >
                       <div class="container3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                                 <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
-                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                <a class="nav-link" href="<?php echo site_url();?>/login_controller/home" style="margin-left: 500px;">
                                   <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
                                 </a>
                             </li>
                             <li class="nav-item">
-                              
+
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <a href=""<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
-                                
+
                             </li>
                         </ul>
                       </div>
-                        
-                    </div>                      
+
                     </div>
-                    
+                    </div>
+
             </nav>
 </div>
     <div class="wrapper">
@@ -572,13 +572,13 @@ a.article:hover {
               <div style="border-top: 5px solid grey;">
                 <li>
                   <a href="#">Sign In</a>
-                    
+
                 </li>
               </div>
-                
-                
-                
-              
+
+
+
+
             </ul>
 
             <!-- <ul class="list-unstyled CTAs">
@@ -601,10 +601,10 @@ a.article:hover {
                     <li ><button class="navbar-toggler offCanvasToggler d-inline-flex mr-2" style="color: red;" ><span class="navbar-toggler-icon" style="color: red;"></span></button></li>
                     <li>
                       <img src="<?php echo base_url();?>assets/search.png" style="width: 20px; height: 20px; background-color: white; margin-left: 30px;">
-                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>                         
+                        <form action="GET"><input type="text" name="seacrh" id="search" placeholder="   Search"></form>
                       </li>
-                        
-                    
+
+
                 </ul>
             </div>
             <div class="col-md-4">
@@ -620,7 +620,7 @@ a.article:hover {
             </div>
           </div>
         </div>
-      </nav> 
+      </nav>
        --><div class="mainContainer">
           <form class="form_1">
           <h2> Sign up </h2>
@@ -631,7 +631,7 @@ a.article:hover {
               <div class="inputdata">
                 <label>Password</label>
                 <a href="#" class="forgot-password">Forgot Password?</a>
-                <input type="text" id="input" name="passwod" placeholder="" required/>
+                <input type="password" id="input" name="passwod" placeholder="" required/>
               </div>
 
               <div><p>We reccomend at least 8 characters long, avoiding patterns and common words/phrases.See Google's<a href="#" style="font-size:15px;color: red;"> creating a strong password </a>guide for more help</p>
@@ -641,13 +641,13 @@ a.article:hover {
 
               <input class="button" type="submit" value="SIGN UP">
 
-              <div class="toggle-link" style="font-size:15px;"> 
+              <div class="toggle-link" style="font-size:15px;">
                 Already have an account?<a href="<?php echo site_url();?>/login_controller/index" style="font-size:15px; color: red"> Sign in here.</a>
               </div>
-             
+
         </form>
       </div>
-   
+
 
 
   <footer>
@@ -661,7 +661,7 @@ a.article:hover {
             <input type="text" name="email" placeholder="  discount@me.com" class="email_input">
             <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
           </div>
-           
+
         </div>
     </div>
   </div>
@@ -689,7 +689,7 @@ a.article:hover {
 
     <div class="col-md-2">
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sell</h5>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter; ">How it works</a>
@@ -705,7 +705,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">About Us</a>
@@ -731,7 +731,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Blank</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Shop Blank</a>
@@ -751,7 +751,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">Sign In</a>
@@ -764,7 +764,7 @@ a.article:hover {
 
    <div class="col-md-2">
       <h6 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h6>
-      
+
       <ul class="list-unstyled">
         <li>
           <a href="#1" style="color: white; font-weight: lighter;">us@cottonbureau.com</a>

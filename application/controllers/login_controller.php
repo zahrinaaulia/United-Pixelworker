@@ -24,6 +24,10 @@ class login_controller extends CI_Controller{
 		$this->load->view('ordernew');
 	}
 
+	function submit(){
+		$this->load->view('submitdesign_view');
+	}
+	
 	function profile(){
 		$this->load->view('profilenew');
 	}

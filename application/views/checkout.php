@@ -579,14 +579,14 @@ a.article:hover {
                     <div class="row" >
                       <div class="container3">
                           <ul class="nav navbar-nav">
-                            <li class="col-md-2" ">
+                            <li class="col-md-2">
                               <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                                 <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
                                 <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                               </form>
                             </li>
                             <li class="col-md-8">
-                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                <a class="nav-link" href="<?php echo site_url();?>/login_controller/home" style="margin-left: 500px;">
                                   <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
                                 </a>
                             </li>
@@ -595,7 +595,7 @@ a.article:hover {
                             </li>
                             <li class="col-md-2">
                               <div style="margin-left: 70px; padding-top: 10px;">
-                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                <a href="<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
                                  <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                               </div>
 
@@ -668,7 +668,7 @@ a.article:hover {
     <div style="height: auto; padding-bottom:50px;">
       <div class="row">
         <div class="col-md-6">
-            <img src="<?php echo base_url();?>img/6.PNG" style="margin-left: 40px; margin-top: 50px;">
+            <img src="<?php echo base_url();?>img/2.PNG" style="margin-left: 40px; margin-top: 50px;">
         </div>
         <div class="col-md-6">
             <div style="border: 1px solid; width: 700px; height: 1200px; margin-top: 40px; margin-left: 70px;">

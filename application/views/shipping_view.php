@@ -2,457 +2,408 @@
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style type="text/css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
- .btn-default{
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="<?php echo base_url()?>assets/js/bootstrap.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+
+  <style>
+
+    .btn-default{
       color: red;
       border: 0px;
-      width:75px;
+      width:50px;
+      height: 50px;
 
     }
 
+    .navbar-default{
+      background: white;
 
-/* Style the body */
-body {
-  font-family: Arial;
-  margin: 0;
-  transition: background-color .5s;
+    }
+
+    #nav-id{
+      font-color: red;
+    }
+
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: black;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Header/Logo Title */
-
-b{
-	font-family: aktiv-grotesk,sans-serif;
-  /*  font-weight: 500;*/
-    font-style: normal;
-    color: #2b2d31;
-    /*padding: 0 6px;*/
-}
-.content{
-font-family: aktiv-grotesk,sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.85
+#sidebar.active {
+    left: 0;
 }
 
-.container{
-  background-color: #f5f7f9;
-  margin-top: 30px;
-  margin-left: 0px;
-  margin-right: 0px;
-  max-width: 2000px
-}
-.container1{
- width: 1000px;
- padding-bottom: 10px;
- margin-bottom: 10px; 
- margin-top: 0px;
- padding-top: 5px;
- margin-left: 200px;
-}
-
-.container11{
- background-color: white;
- max-width: 700px;
- padding-bottom: 50px;
- margin-bottom: 50px;
- padding-top: 10px 
-}
-.container12{
- background-color: white;
- max-width: 700px;
- padding-bottom: 50px;
- margin-bottom: 50px; 
-}
-.container2{
-	align-items: right;
-	 width: 500px;
- padding-bottom: 10px;
- margin-bottom: 10px; 
- margin-top: 0px;
- padding-top: 5px;
- margin-left: 700px;
- margin-right: 150px;
- background-color: #f5f7f9
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.container21{
- background-color: white;
- max-width: 700px;
- padding-bottom: 50px;
- margin-bottom: 50px;
- padding-top: 10px 
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
 }
 
-.container22{
-	 background-color: white;
- max-width: 700px;
- padding-bottom: 50px;
- margin-bottom: 50px; 
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
 }
 
-#file {
-  display: inline-block;
-}
-#file input[type=file] {
-  display:none;
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: black;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
 }
 
-
-.sidenav {
-  margin-top: 47px;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+#sidebar ul li a:hover {
+    color: black;
+    background: #fff;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: black;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+a[data-toggle="collapse"] {
+    position: relative;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-li{
-  line-height: 2.1;
-  font-size: 15px;
-  color: white;
-  font-weight: lighter;
-
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: black;
 }
 
-h4,h5,h6{
-  padding-top: 20px;
-  color: white;
-  padding-bottom: 20px;
-  font-size: 15px;
-  border-top: 1px solid grey;
-  font-weight: bold;
-
+ul.CTAs {
+    padding: 20px;
 }
 
-.tempat{
-  margin-top: 12px;
-  border: 1px groove white;
-  width: 300px;
-
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-/* Page Content */
-.content {padding:20px;}
-
-
-.navbar{
-  background-color: white;
+a.download {
+    background: #fff;
+    color: #7386D5;
 }
 
-.has-search .form-control {
-  padding-left: 10px;
-/*  padding-top: 50px*/
+a.article,
+a.article:hover {
+    background: #000 !important;
+    color: #fff !important;
 }
 
-.has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
-}
-footer{
-	 height: 100px;   
-}
-</style>
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
 
 
 
+
+  </style>
+</head>
 <body>
-	<div class="topnav">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2">
-          <ul class="nav navbar-nav">
-              <li ><span style="color: red; font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span></li> 
-              <li><div style="padding-left: 10px; padding-top: 15px" class="form-group has-search">
-                    <span class="fa fa-search form-control-feedback"></span>
-                    <input type="text" class="form-control" placeholder="Search">
-                  </div><!-- <img style="width: 50px" height="50px" src="searchlogo.png"> -->
-              </li>
-          </ul>
+
+
+  <div class="overlay fixed-top"></div>
+
+            <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="row" >
+                      <div class="container_3">
+                          <ul class="nav navbar-nav">
+                            <li class="col-md-2" ">
+                              <form id="search" style="width: 600px; align:center; padding-top: 10px;">
+                                <img src="assets/search.png" style="width: 30px;">
+                                <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
+                              </form>
+                            </li>
+                            <li class="col-md-8">
+                                <a class="nav-link" href="#" style="margin-left: 500px;">
+                                  <img src="assets/logo.jpeg" style="width: 40px; align:center;">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="col-md-2">
+                              <div style="margin-left: 70px; padding-top: 10px;">
+                                <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                                 <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
+                              </div>
+
+                            </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    </div>
+
+            </nav>
+</div>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" >
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components"  ">
+              <div style="border-top: 5px solid grey;">
+                <p style="font-size: 20px; color: red;">Cotton Bureau</p>
+                <li class="active" style="background-color: black;">   <p>SHOP</p>
+                    <a href='#'>All Product </a>
+                    <a href="#"> Blank</a>
+                    <a href="#"> Search </a>
+                </li>
+              </div>
+              <div style="border-top: 5px solid grey;">
+                <li class="active" style="background-color: black;">
+                  <p>SELL</p>
+                    <a href="#">Submit a Design</a>
+                    <a href="#">How it works</a>
+                    <a href="#">Cotton Bureau Plus</a>
+                    <a href="#">FAQ</a>
+                </li>
+              </div>
+              <div style="border-top: 5px solid grey;">
+                <li class="active" style="background-color: black;">
+                  <a href="#">Sign In</a>
+
+                </li>
+              </div>
+
+
+
+
+            </ul>
+
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul> -->
+        </nav>
+
+</div>
+  <h1 style="padding: 150px; text-align:center;">SHIPPING AND PAYMENT</h1>
+  <div class="row">
+  <form class="col-lg-7">
+    <table style="background-color: black;">
+      <h3 style="padding-left: 175px;">Shipping Information</h3>
+        <div class="form-row">
+          <div class="form-group col-md" style="margin-left: 175px;">
+            <span>Email</span>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+          <div class="form-group col-md" >
+              <span>country</span>
+              <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+          </div>
         </div>
-           <div class="col-lg-8">
-          <ul class="nav navbar-nav" style= "margin-left: 500px" >
-              <li><img style="margin: center" width="50px" height="55px" src="logo.png"/></li>
-          </ul>
-      </div>
-      <div class="col-lg-2">
-          <ul class="nav navbar-nav" style= "margin-left:50px">
-              <li  style="text-align: right;"><a style="color: red" href="#"><span style="color: red; padding-right: 5px" class="glyphicon glyphicon-user"></span>Sign In</a></li>
-          </ul>
-      </div>
-      </div>
-    </div>
-</div>
-<div class="topnav" style="background-color: white">
-	<div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6">
-      	 <ul class="nav navbar-nav">
-      	 	<li><a href="#" style="color: red">back to summary</a></li>
-	
-</div>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a style="color: red; font-family: aktiv-grotesk,sans-serif;">Cotton Breau</a>
-  <a href="#">All product</a>
-  <a href="#">Submit a Design</a>
-  <a href="#">My Account</a>
-  <a href="#">Sign Out</a>
-</div>
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
-
-</script>
-
-
-<div class="header" style="background-color: #f5f7f9">
-	<img src="shipping.png" align="middle" style="margin-left: 300px">
-		<div class="container" style=" background-color: #f5f7f9;padding-top: 20px;margin-right: 100px">
-	
-					<div class="container1">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="container11" style="background-color: white">
-									<div class="header" style="background-color: white"><h3>Shipping information</h3>
-									</div>
-		
-								<form>
-									<table style="background-color: white" align="left">
-  										<div class="form-row">
-    										<div class="form-group col-md-6">
-    											<span>Email</span>
-      											<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    											</div>
-    										<div class="form-group col-md-6">
-    	  										<span>country</span>
-      											<select id="inputState" class="form-control">
-        										<option selected>Choose...</option>
-       										 	<option>...</option>
-      											</select>
-    										</div>
-  										</div> 
-
-  										<div class="form-row">
-    										<div class="form-group col-md-6">
-    											<input type="text" class="form-control" id="inputName" placeholder="Name">
-    											</div>
-    										<div class="form-group col-md-6">
-    											<input type="text" class="form-control" id="inputAddress" placeholder="Address">
-    											</div>
-  											</div>
-
-  										<div class="form-row">
-    										<div class="form-group col-md-6">
-      											<input type="text" class="form-control" id="company" placeholder="company">
-    											</div>
-    										<div class="form-group col-md-6">
-      											<input type="text" class="form-control" id="inputadress2" placeholder="Address2">
-    											</div>
-  										</div>
-
-    									<div class="form-row">
-    										<div class="form-group col-md-6">
-      											<input type="text" class="form-control" id="phone" placeholder="phone">
-    											</div>
-    										<div class="form-group col-md-6">
-      											<input type="text" class="form-control" id="CIty" placeholder="City">
-    											</div>
-  										</div>
-
-  	 									<div class="form-row" align="right">
-    										<div class="form-group col-md-6" align="right">
-    											<div class="form-group col-md-3"><select id="inputState" class="form-control">
-        											<option selected>Choose...</option>
-        											<option>...</option>
-      												</select></div>
-      											<div class="form-group col-md-3">
-      												<input type="text" class="form-control" id="phone" placeholder="phone"></div>
-    												</div>
-  										</div> 
-  									<button type="submit" class="btn btn-primary">Sign in</button> 
-
-  									</table>
-								</form>
-							</div>
-
-										<div class="container12" style="background-color: white">
-											<div class="header" style="background-color: white"><h3>Payment information</h3>
-											</div>
-										<form>
-											<table style="background-color: white" align="left">
-  				<div class="form-row">
-    				<div class="form-group col-md-6">
-      					<input type="email" class="form-control" id="cardnumber" placeholder="Card number">
-    				</div>
-    				<div class="form-group col-md-6">
-    	  				<input type="email" class="form-control" id="mm/yy/cvc" placeholder="MM/YY/CVC">
-    				</div>
-  				</div> 
-  			</table>
-		</form>
-		<button type="button" class="btn btn-danger">Place order</button>
-	</div>
-</div>
-
-<!-- </div>
-</div> -->
-
-
-		<div class="container2" style="background-color: #f5f7f9 " align="right">
-			
-		<div class="row">
-		<div class="col-lg-6">
-			<div class="container21">
-					<table style="background-color: white" align="right">
-  						<tr>
-  							<th>Your Order</th>
-  						</tr>
-  						<tr>
-  							<td>Subtotal</td>
-  						</tr>
-  						<tr>
-  							<td>Estimated Shipping & Handing -</td>
-  						</tr>
-  						<tr>
-  							<td>Estimated Tax</td>
-  						</tr> 
-  						<tr>
-  							<td>TOTAL</td>
-  						</tr>
-  					</table>
-  				</div>
-		
-			
-
-			<div class="container22">
-				<table style="background-color: lightgrey" align="right" >
-					<tr>
-						<th>Help</th>
-					</tr>
-					<tr>
-						<td><a href="#">Return Policy</a></td>
-						<td><a href="#">support@cottonbureau.com</a></td>
-					</tr>
-					<tr>
-						<td><a href="#">Shipping info</a></td>
-						<td><a href="#">FAQ</a></td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="container23" style="margin-top: 50px">
-				<div class="Content">
-					<p>Your credit card will be charged immediately, and your order will most likely be shipped April 26–May 7, 2019.<br></p>
-					<p>By placing an order you agree to our Terms of Use and Privacy Policy.</p>
-				</div>
-			</div>
-
-		</div>
-		</div>
-		</div> 
-
-
-	</div>
-</div>
-
-<footer>
-	<div class="row">
-        <div class="col-md-12" style="color: grey; padding-top: 30px; font-size: 15px; font-weight: bolder; margin-left: 660px ">
-        	<ul class="list-unstyled">
-        <li>
-          <a href="#1" style="font-weight: lighter;color: black"> Home </a> <a href="#1" style="font-weight: lighter;color: black"> Shop </a> <a href="#1" style="font-weight: lighter;color: black"> About us </a> <a href="#1" style="font-weight: lighter;color: black"> FAQ </a> <a href="#1" style="font-weight: lighter;color: black">Privacy</a> <a href="#1" style="font-weight: lighter;color: black"> Terms </a> <a href="#1" style="font-weight: lighter;color: black"> Contact Us </a>
-      </li>
-       
-         <p style="margin-left: 50px"> © Cotton Bureau. All rights reserved.</p>
+        <div class="form-row">
+          <div class="form-group col-md" style="margin-left: 175px;">
+            <span>Name</span>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+            </div>
+          <div class="form-group col-md">
+              <span>Address</span>
+              <input type="text" class="form-control" placeholder="Address">
+          </div>
         </div>
-    </div>
-</footer>
+        <div class="form-row">
+          <div class="form-group col-md" style="margin-left: 175px;">
+            <span>Company</span>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Company(Optional)">
+            </div>
+          <div class="form-group col-md">
+              <span>Address2(Optional)</span>
+              <input type="text" class="form-control" placeholder="Address2(Optional)">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md" style="margin-left: 175px;">
+            <span>Name</span>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+            </div>
+          <div class="form-group col-md">
+              <span>Address</span>
+              <input type="text" class="form-control" placeholder="Address">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2.5" style="margin-left: 610px;">
+            <span>State/Province</span>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="State/Province">
+            </div>
+          <div class="form-group col-md-2.5">
+              <span>Zip/Postal Code</span>
+              <input type="text" class="form-control" placeholder="Zip/Postal Code">
+          </div>
+        </div>
+        </table>
+        <table>
+            <h3 style="padding-left: 175px; padding-top: 100px;">Payment Information</h3>
+              <div class="form-row">
+                <div class="form-group col-md" style="margin-left: 175px;">
+                  <span>Card Number</span>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Card Number">
+                  </div>
+                <div class="form-group col-md-1" >
+                    <span>MM/YY</span>
+                    <input type="text" class="form-control" placeholder="MM/YY">
+                </div>
+                <div class="form-group col-md-1" >
+                  <span>CVC</span>
+                  <input type="text" class="form-control" placeholder="CVC">
+              </div>
+              </div>
 
+        </table>
+        </form>
+        <div style=" width: 600px;">
+          <h3 style="padding-left: 50px;">Your Order</h3>
+          <div class="form-row">
+          <h5 style="padding-left: 50px; padding-top: 50px;"> Subtotal </h5>
+          <h5 style="padding-left: 350px; padding-top: 50px;">$29.00</h5>
+          </div>
+          <div class="form-row">
+          <h5 style="padding-left: 50px;">Estimated Shipping & Handling</h5>
+          <h5 style="padding-left: 145px;">-</h5>
+          </div>
+          <div class="form-row">
+          <h5 style="padding-left: 50px;">Estimated Tax</h5>
+          <h5 style="padding-left: 305px;">-</h5>
+          </div>
+          <div class="form-row">
+          <h3 style="padding-left: 50px; padding-top: 50px;"> Total </h3>
+          <h5 style="padding-left: 368px; padding-top: 50px;">$29.00</h5>
+          </div>
+          <h3 style="padding-left: 50px; padding-top: 100px;">Help</h3>
+          <div class="form-row">
+          <h5 style="padding-left: 50px; padding-top: 50px;" > Return Policy </h5>
+          <h6 style="padding-left: 200px; padding-top: 50px;">support@cottonbureau.com</h6>
+          </div>
+          <div class="form-row">
+            <h5 style="padding-left: 50px;"> Shipping Info </h5>
+            <h5 style="padding-left: 300px;">FAQ</h5>
+            </div>
+          <h6 style="padding-left: 50px; padding-top: 50px;"> Your credit card will be changed immediately, and your order will most likely be shipped.</h6>
+          <h6 style="padding-left: 50px">By placing an order you agree to our Terms of Use and Privacy Policy.</h6>
+        </div>
+</div>
+<button style="margin-left:175px;" type="button" class="btn btn-danger">Place order</button>
+
+<div class="form-row" style="padding-left: 800px; padding-top: 300px;">
+<h8 style="padding-right: 20px;">Home</h8>
+<h8 style="padding-right: 20px;">Shop</h8>
+<h8 style="padding-right: 20px;">About Us</h8>
+<h8 style="padding-right: 20px;">FAQ</h8>
+<h8 style="padding-right: 20px;">Privacy</h8>
+<h8 style="padding-right: 20px;" >Terms</h8>
+<h8 style="padding-right: 20px;">Contact Us</h8>
+</div>
+<h8 style="padding-left: 900px; padding-top: 350px; padding-bottom: 100px;">Cotton Bureau. All rights reserved.</h8>
 </body>
 </html>

@@ -507,14 +507,14 @@ a.article:hover {
         <div class="row" >
             <div class="container3">
                 <ul class="nav navbar-nav">
-                  <li class="col-md-2" ">
+                  <li class="col-md-2">
                     <form id="search" style="width: 600px; align:center; padding-top: 10px;">
                       <img src="<?php echo base_url();?>assets/search.png" style="width: 30px;">
                       <input type="search" name="search" placeholder="search" style="background-color: transparent; border-style: none;">
                     </form>
                   </li>
                   <li class="col-md-8">
-                    <a class="nav-link" href="#" style="margin-left: 500px;">
+                    <a class="nav-link" href="<?php echo site_url();?>/login_controller/home" style="margin-left: 500px;">
                       <img src="<?php echo base_url();?>assets/logo.jpeg" style="width: 40px; align:center;">
                     </a>
                   </li>
@@ -522,7 +522,7 @@ a.article:hover {
                   </li>
                   <li class="col-md-2">
                     <div style="margin-left: 70px; padding-top: 10px;">
-                      <button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button>
+                      <a href="<?php echo site_url();?>/login_controller/index"><button style="font-size:24px; color: red; border: 0px; background-color: transparent;">Sign In <i class="fa fa-user"></i></button></a>
                       <button style="font-size:24px; color: red; border: 0px; background-color: transparent;"><i class="fa fa-shopping-cart"></i></button>
                     </div>
                   </li>
@@ -624,7 +624,7 @@ a.article:hover {
               <div class="inputdata">
                 <label>Password</label>
                 <a href="#" class="forgot-password">Forgot Password?</a>
-                <input type="text" id="input" name="passwod" placeholder="" required/>
+                <input type="password" id="input" name="passwod" placeholder="" required/>
               </div>
 
               <input class="button" type="submit" value="SIGN IN ">
